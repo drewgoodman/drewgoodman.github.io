@@ -12,7 +12,7 @@
 /* Slim down home buttons */
 
     .home-buttons {
-        grid-template-columns: 1fr [works-s] 206px [works-e] .3fr [contact-s] 206px [contact-e] 1fr;
+        grid-template-columns: 1fr [first-s] 206px [first-e] .3fr [second-s] 206px [second-e] 1fr;
 
     }
 
