@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1300px) {
+ /* First breakpoint --- start reducing sidebar size */
+
+    .side-bar {
+        width: 350px;
+    }
+
+    .page-content-wrapper {
+        margin-left: 350px;
+    }
+
+/* Slim down home buttons */
+
+    .home-buttons {
+        grid-template-columns: 1fr [works-s] 206px [works-e] .3fr [contact-s] 206px [contact-e] 1fr;
+
+    }
+
+    .home-btn {
+        width: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .side-bar {
+        width: 300px;
+        left: -300px;
+        transition: .5s left ease-in-out;
+    }
+
+    .side-bar.open {
+        left: 0px;
+    }
+
+    .page-content-wrapper {
+        margin-left: 0px;
+    }
+
+    .page-footer {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    #menu-toggle {
+        display: initial;
+    }
+
+}
+
+
+
+@media only screen and (max-height: 700px) {
+
+    .side-bar {
+        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 80px [title-e links-s] 200px [links-e contacts-s] 70px [contacts-e] 1fr [e];
+        
+    }
+
+    .profile-pic {
+        height: 150px;
+        width: 150px;
+    }
+
+    .profile-links {
+        grid-row-gap: 10px;
+    }
+}

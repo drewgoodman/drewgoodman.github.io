@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.page-container {
+    width: 100vw;
+}
+
+
+
+.page-content-wrapper {
+    margin-left: 500px;
+}
+
+.page-content {
+    margin-left: 30px;
+    margin-right: 130px;
+}
+
+.page-footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}

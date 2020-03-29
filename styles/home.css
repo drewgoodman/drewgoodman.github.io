@@ -1,0 +1,69 @@
+#home {    
+    background-image: url("../static/images/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+}
+
+.home-wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.home-shader {
+    background: rgba(0,0,0,0.77);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.77)), color-stop(72%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.home-buttons {
+    display: grid;
+    grid-template-columns: 1fr [works-s] 276px [works-e] .3fr [contact-s] 276px [contact-e] 1fr;
+}
+
+.home-btn {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 1.4em;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.4);
+    text-decoration: none;
+    color: #fff;
+
+    -webkit-box-shadow: 9px 7px 14px -2px rgba(0,0,0,0.44);
+    -moz-box-shadow: 9px 7px 14px -2px rgba(0,0,0,0.44);
+    box-shadow: 9px 7px 14px -2px rgba(0,0,0,0.44);
+
+    transition: 0.4s all ease-in;
+
+}
+
+.home-btn:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+#viewworks-btn {
+    grid-column: works-s/works-e;
+}
+
+#getintouch-btn {
+    grid-column: contact-s/contact-e;
+}
