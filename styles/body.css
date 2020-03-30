@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .page-container {
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .page-content-wrapper {
