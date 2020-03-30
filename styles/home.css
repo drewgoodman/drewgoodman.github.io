@@ -5,10 +5,11 @@
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .home-wrapper {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -112,7 +113,7 @@
     margin-right: 300px;
 }
 
-.home-btn:hover {
+.home-btn:hover, .home-btn:active {
     background-color: #ccc;
     color: #333;
 }

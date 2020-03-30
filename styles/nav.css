@@ -67,7 +67,6 @@
 #menu-toggle.close > .middle, #menu-toggle.close > .bottom {
     transform: rotate(-45deg) translateX(-20px);
     top: 20%;
-    
 }
 
 #menu-overlay {
