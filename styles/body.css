@@ -7,8 +7,6 @@ body {
     width: 100vw;
 }
 
-
-
 .page-content-wrapper {
     margin-left: 500px;
 }
@@ -23,4 +21,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+
 }

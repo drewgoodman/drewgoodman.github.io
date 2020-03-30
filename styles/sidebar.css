@@ -40,6 +40,7 @@ box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
 .profile-title {
     grid-row: title-s/title-e;
     color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -52,8 +53,10 @@ box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
 
 .profile-links a {
     text-decoration: none;
+    font-family: 'Special Elite', cursive;
     color: white;
     font-size: 1.5em;
+    margin-left: 15px;
 }
 
 .profile-contact {
@@ -66,6 +69,7 @@ box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
     grid-gap: 40px;
     align-items: center;
     justify-items: center;
+    margin-left: 30px;
 }
 
 .profile-contact-icons > .contact-link i {
