@@ -2,28 +2,28 @@ const projects = [
     {
         title: "PetStash Supply Co.",
         coverImage: "petstash-1.png",
-        liveURL: "https://drg-jquery-todo.herokuapp.com",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        liveURL: "https://petstash-supply-co.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/PetStash-StoreFront",
+        desc: "Full functioning eCommerce site with user accounts, searching, and checkout",
+        skills: ["React.js","SCSS","Postman"]
     },
     
     {
-        title: "PetStasth Backend API",
+        title: "PetStash Backend API",
         coverImage: "petstash-back2.png",
-        liveURL: "https://drg-jquery-todo.herokuapp.com",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        liveURL: "https://petstash-backoffice.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/PetStash-BackOfficeAPI",
+        desc: "Restful API with CRUD functionality; handles shop and user data for the front end.",
+        skills: ["Python","MySQL","Flask","Boostrap"]
     },
 
     {
         title: "Triple Triad Browser Game",
         coverImage: "tripletriad-1.png",
-        liveURL: "https://drg-jquery-todo.herokuapp.com",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        liveURL: "https://drg-triple-triad.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/Triple-Triad",
+        desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
+        skills: ["JavaScript","HTML5","CSS3"]
     },
     
     {
@@ -36,21 +36,21 @@ const projects = [
     },
     
     {
-        title: "jQuery To-Do List",
-        coverImage: "todo-list.png",
-        liveURL: "https://drg-jquery-todo.herokuapp.com",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        title: "eCommerce Mockup",
+        coverImage: "eCommerce.png",
+        liveURL: "https://drgood-ecommerce-react.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/practice-ecommerce-react-app",
+        desc: "Front-end React mockup of an eCommerce app for purchasing stickers.",
+        skills: ["React.js","Redux","SCSS"]
     },
     
     {
-        title: "jQuery To-Do List",
-        coverImage: "todo-list.png",
-        liveURL: "https://drg-jquery-todo.herokuapp.com",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
+        title: "Bottega Diner",
+        coverImage: "diner.png",
+        liveURL: "https://drg-bottega-diner.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/Bottega-Diner",
         desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        skills: ["JavaScript","HTML5", "CSS3"]
     }
 ]
 
