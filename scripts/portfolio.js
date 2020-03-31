@@ -1,10 +1,10 @@
 const projects = [
     {
         title: "PetStash Supply Co.",
-        coverImage: "petstash-1.png",
+        coverImage: "petstash-front-banner.jpg",
         liveURL: "https://petstash-supply-co.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-StoreFront",
-        desc: "Full functioning eCommerce site with user accounts, searching, and checkout",
+        desc: "Functional eCommerce site with account signup, searching, and checkout",
         skills: ["React.js","SCSS","Postman"]
     },
     
@@ -13,13 +13,13 @@ const projects = [
         coverImage: "petstash-back2.png",
         liveURL: "https://petstash-backoffice.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-BackOfficeAPI",
-        desc: "Restful API with CRUD functionality; handles shop and user data for the front end.",
+        desc: "Restful API with CRUD functionality; handles the shop and user data.",
         skills: ["Python","MySQL","Flask","Boostrap"]
     },
 
     {
         title: "Triple Triad Browser Game",
-        coverImage: "tripletriad-1.png",
+        coverImage: "tripletriad-banner.png",
         liveURL: "https://drg-triple-triad.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Triple-Triad",
         desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
@@ -49,7 +49,7 @@ const projects = [
         coverImage: "diner.png",
         liveURL: "https://drg-bottega-diner.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Bottega-Diner",
-        desc: "Basic to-do list app with complete and delete functions.",
+        desc: "Interactive diner menu with commentary.",
         skills: ["JavaScript","HTML5", "CSS3"]
     }
 ]
@@ -59,9 +59,7 @@ const repoIcon = '<i class="fas fa-code">'
 const infoIcon = '<i class="fas fa-camera">'
 
 function loadProjects() {
-    console.log(projects);
     projects.forEach(project => {
-        console.log(project.name);
         buildProject(project);
     })
 }
@@ -108,5 +106,6 @@ function buildActionIcon(url, icon, text) {
 }
 
 $(document).ready(function () {
+
     loadProjects();
 })

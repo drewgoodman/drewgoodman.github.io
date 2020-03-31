@@ -6,8 +6,8 @@
 
     
     -webkit-box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
--moz-box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
-box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
+    box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
 
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@ box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
     justify-content: center;
     align-items: center;
     justify-items: center;
-    z-index: 3;
+    z-index: 5;
 }
 
 
@@ -57,6 +57,26 @@ box-shadow: 1px 0px 19px 0px rgba(0,0,0,0.66);
     color: white;
     font-size: 1.5em;
     margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+}
+
+.profile-links a:after {
+    position: absolute;
+    border-radius: 20px;
+    transition: .3s;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #f7f7f7;
+    width: 0%;
+    transition: 0.3s all ease-in;
+}
+
+.profile-links a:hover:after {
+    width: 100%;
 }
 
 .profile-contact {

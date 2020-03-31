@@ -9,16 +9,18 @@
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     position: relative;
-
+    
     height: 300px;
 
     display: grid;
-    grid-template-rows: [action-s] 55px [action-e] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e] 10px [skills-s] 30px [skills-e] 10px [e];
+    grid-template-rows: [action-s] 55px [action-e] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e] 10px [skills-s] 30px [skills-e] 5px [e];
+    /* grid-template-rows: 10px [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e] 5px [skills-s] 30px [skills-e] 1fr [action-s] 50px [action-e e]; */
+
     -webkit-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
--moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
+    box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
 }
 
 .project-actions {
@@ -42,17 +44,28 @@ box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
     color: white;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
-    border-bottom: 2px solid transparent;
     margin-left: 35px;
     margin-right: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
-    transition: .2s all ease-in-out;
+    padding: 4px;
+    position: relative;
+    overflow: hidden;
 }
 
-.project-action:hover {
-    border-bottom: 2px solid white;
+.project-action:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background: white;
+    width: 0%;
+    transition: 0.2s all ease-in-out;
+}
+
+.project-action:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .project-action i {
@@ -99,6 +112,7 @@ box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
     display: flex;
     align-items: center;
     color: white;
+    font-size: 80%;
 }
 
 .project-skills-wrapper {
@@ -112,11 +126,16 @@ box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
     font-family: 'Share Tech Mono', monospace;
     background: teal;
     height: 22px;
-    width: 90px;
+    width: 95px;
+    font-size: 85%;
     border-radius: 10px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    -webkit-box-shadow: 3px 4px 13px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 13px -4px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 13px -4px rgba(0,0,0,0.75);
 }
 
