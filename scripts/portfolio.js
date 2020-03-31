@@ -35,12 +35,11 @@ const projects = [
         skills: ["jQuery","HTML5", "CSS3"]
     },
     
-    
     {
         title: "Python Games",
         coverImage: "python-games-banner.png",
-        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Hangman, Tic-tac-toe, a Magic 8-Ball, and more built for the terminal.",
+        repoURL: "https://github.com/drewgoodman/Python-Games",
+        desc: "Hangman, Tic-tac-toe, a Magic 8-Ball, and more built to run in a terminal.",
         skills: ["Python"]
     },
     
@@ -64,8 +63,11 @@ const projects = [
 ]
 
 const liveIcon = '<i class="fas fa-desktop">';
+const liveText = "Live";
 const repoIcon = '<i class="fas fa-code">'
+const repoText = "Code";
 const infoIcon = '<i class="fas fa-question-circle">'
+const infoText = "Info";
 
 function loadProjects() {
     projects.forEach(project => {
@@ -81,8 +83,8 @@ function buildProject(project) {
         });
 
     var projectActions = $("<div></div", { "class": "project-actions project-bg" });
-    var newInfoIcon = $("<a></a>", { "class": "project-action", "href": "#" }).append($(infoIcon), "Info")
-    projectActions.append(buildActionIcon(project.liveURL, liveIcon, "Live"), buildActionIcon(project.repoURL, repoIcon, "Repo"), newInfoIcon);
+    var newInfoIcon = $("<a></a>", { "class": "project-action", "href": "#" }).append($(infoIcon), infoText)
+    projectActions.append(buildActionIcon(project.liveURL, liveIcon, liveText), buildActionIcon(project.repoURL, repoIcon, repoText), newInfoIcon);
 
     var projectTitle = $("<div></div>", { "class": "project-title" }).append(project.title);
 
