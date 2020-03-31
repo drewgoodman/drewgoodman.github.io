@@ -1,4 +1,4 @@
-.projects-container {
+#projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 30px;
@@ -26,19 +26,35 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 50px;
-    font-family: 'Oswald', sans-serif;
-    color: white;
+    z-index: 1;
 }
 
 .project-bg {
     background-color: rgba(0,0,0,.4);
 }
 
-.project-actions i {
+.project-action {
+    font-family: 'Oswald', sans-serif;
     color: white;
-    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
     margin-left: 35px;
     margin-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: .2s all ease-in-out;
+}
+
+.project-action:hover {
+    border-bottom: 2px solid white;
+}
+
+.project-action i {
+    color: white;
+    font-size: 1.5em;
+    padding-right: 5px;
 }
 
 .project-title, .project-desc, .project-skills-wrapper {
@@ -85,6 +101,7 @@
 }
 
 .project-skill {
+    font-family: 'Share Tech Mono', monospace;
     background: teal;
     height: 22px;
     width: 90px;
