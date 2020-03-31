@@ -88,6 +88,11 @@
 
 /* Mobile styles --- smaller buttons, slimmer elements */
 
+    #home {
+        background-image: url("../static/images/background/landing-mobile.jpg");
+        background-attachment: scroll;
+    }
+
     .home-intro-text h1 {
         font-size: 7.3vw;
     }
