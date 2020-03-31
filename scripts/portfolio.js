@@ -35,6 +35,15 @@ const projects = [
         skills: ["jQuery","HTML5", "CSS3"]
     },
     
+    
+    {
+        title: "Python Games",
+        coverImage: "python-games-banner.png",
+        repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
+        desc: "Hangman, Tic-tac-toe, a Magic 8-Ball, and more built for the terminal.",
+        skills: ["Python"]
+    },
+    
     {
         title: "eCommerce Mockup",
         coverImage: "eCommerce.png",
@@ -56,7 +65,7 @@ const projects = [
 
 const liveIcon = '<i class="fas fa-desktop">';
 const repoIcon = '<i class="fas fa-code">'
-const infoIcon = '<i class="fas fa-camera">'
+const infoIcon = '<i class="fas fa-question-circle">'
 
 function loadProjects() {
     projects.forEach(project => {
@@ -96,13 +105,17 @@ function buildProject(project) {
 }
 
 function buildActionIcon(url, icon, text) {
-    var newIcon = $("<a></a>",
-        {
-            "class": "project-action",
-            "target": "_blank",
-            "href": url
-        }).append($(icon), text);
-    return newIcon;
+    if (url) {
+        var newIcon = $("<a></a>",
+            {
+                "class": "project-action",
+                "target": "_blank",
+                "href": url
+            }).append($(icon), text);
+        return newIcon;
+    } else {
+        return false;
+    }
 }
 
 $(document).ready(function () {
