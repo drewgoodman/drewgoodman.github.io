@@ -48,7 +48,7 @@
     grid-row: links-s/links-e;
     display: grid;
     grid-template-rows: 1fr;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
 }
 
 .profile-links a {
@@ -59,13 +59,14 @@
     margin-left: 15px;
     position: relative;
     overflow: hidden;
-    width: 150px;
+    width: 170px;
+    padding-top: 10px;
 }
 
 .profile-links a:after {
     position: absolute;
     border-radius: 20px;
-    transition: .3s;
+    transition: .2s;
     content: '';
     left: 0;
     bottom: 0;
@@ -92,14 +93,32 @@
     margin-left: 30px;
 }
 
+.profile-contact-icons > .contact-link {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .profile-contact-icons > .contact-link i {
     font-size: 2.5em;
     color: white;
     transition: .3s all ease-in-out;
+    position: relative;
+    /* overflow: hidden; */
 }
 
-.profile-contact-icons > .contact-link i:hover {
-    color: blue;
-    font-size: 2.9em;
+.profile-contact-icons > .contact-link i:after {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    content: '';
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    top: -38%;
+    left: -38%;
+    z-index: -1;
 }
 

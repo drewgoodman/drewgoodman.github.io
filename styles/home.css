@@ -119,18 +119,42 @@
     -moz-box-shadow: 9px 7px 14px -2px rgba(0,0,0,0.44);
     box-shadow: 9px 7px 14px -2px rgba(0,0,0,0.44);
 
-    transition: 0.4s all ease-in;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.home-btn:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    bottom: 0;
+    width: 0;
+    left: -10%;
+    height: 120%;
+    transform: skewX(15deg);
+    background: #ccc;
+    z-index: -1;
+}
+
+.home-btn:hover:after {
+    width: 120%;
+    left: -10%;
+}
+
+.home-btn:hover {
+    color: #333;
+    z-index: 0;
 }
 
 .home-btn a {
     margin-right: 300px;
 }
-
+/* 
 .home-btn:hover, .home-btn:active {
     background-color: #ccc;
     color: #333;
-}
+} */
 
 .home-btn:nth-of-type(1) {
     grid-column: first-s/first-e;
