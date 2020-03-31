@@ -32,7 +32,7 @@ const projects = [
         liveURL: "https://drg-jquery-todo.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
         desc: "Basic to-do list app with complete and delete functions.",
-        skills: ["HTML5", "CSS3", "jQuery"]
+        skills: ["jQuery","HTML5", "CSS3"]
     },
     
     {
