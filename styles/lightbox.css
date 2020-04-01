@@ -82,6 +82,10 @@
     margin-left: 5px;
 }
 
+#lightbox-actions {
+    margin-bottom: 35px;
+}
+
 
 
 @media only screen and (max-width: 1050px) {
@@ -99,9 +103,9 @@
     }
 
     .lightbox-container {
-        height: calc(100vh - 90px);
+        height: calc(100vh - 95px);
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1.3fr 2fr;
         grid-gap: 10px;
         padding: 0;
         padding-top: 70px;

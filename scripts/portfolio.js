@@ -199,6 +199,7 @@ function openLightbox(projectIndex) {
     $("#lightbox-actions").empty().append(buildActionIcon(project.liveURL, liveIcon, galleryLiveText), buildActionIcon(project.repoURL, repoIcon, galleryRepoText))
 
     $("#lightbox").fadeIn();
+    $('.lightbox-content').animate({scrollTop: 0}, 0);
     $('body').addClass("disable-scrolling");
     $('.unfocus-for-lightbox').addClass("blur-content");
     $('#menu-toggle').addClass("hide-content");
