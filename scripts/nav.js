@@ -1,3 +1,4 @@
+// portfolio.js must load first -- the scroll-to-top button needs to know if the lightbox is open to avoid errors.
 
 const sidebarWidth = 300;
 
@@ -32,7 +33,7 @@ function closeSidebarMenu() {
 $(document).ready(function() {
 
     $(window).scroll(function(){
-        if($(this).scrollTop() > $(window).height() && !menuActive) {
+        if($(this).scrollTop() > $(window).height() && !menuActive && !lightboxOpen) {
             $('#scroll-to-top').fadeIn();
         } else {
             $('#scroll-to-top').fadeOut();

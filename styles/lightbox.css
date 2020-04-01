@@ -83,7 +83,8 @@
 }
 
 
-@media only screen and (max-width: 640px) {
+
+@media only screen and (max-width: 1050px) {
 
 /* Mobile styles */
 
@@ -93,17 +94,17 @@
 
     .lightbox-close {
         font-size: 1.9em;
-        top: 15px;
-        right: 15px;
+        top: 20px;
+        right: 20px;
     }
 
     .lightbox-container {
-        height: calc(100vh - 75px);
+        height: calc(100vh - 90px);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 10px;
         padding: 0;
-        padding-top: 60px;
+        padding-top: 70px;
         margin-left: 10px;
         margin-right: 15px;
     }
@@ -119,6 +120,11 @@
         position: fixed;
         left: 0;
     }
+
+
+}
+
+@media only screen and (max-width: 640px) {
     
     #lightbox-skills-wrapper {
         grid-template-columns: repeat(auto-fill, 65px);
@@ -130,4 +136,9 @@
         font-size: .8em;
     }
 
+
+    #lightbox-actions {
+        display: flex;
+        justify-content: space-around;
+    }
 }
