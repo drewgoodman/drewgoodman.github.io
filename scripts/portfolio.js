@@ -69,9 +69,11 @@ const projects = [
 
 const liveIcon = '<i class="fas fa-desktop">';
 const liveText = "Live";
-const repoIcon = '<i class="fas fa-code">'
+const galleryLiveText = "Try It Live";
+const repoIcon = '<i class="fas fa-code">';
 const repoText = "Code";
-const infoIcon = '<i class="fas fa-question-circle">'
+const galleryRepoText = "See the Code"
+const infoIcon = '<i class="fas fa-question-circle">';
 const infoText = "Info";
 
 var lightboxOpen = false;
@@ -151,10 +153,12 @@ function openLightbox(projectIndex) {
     } else {
         $("#lightbox-text").append($("<p></p>").text("Project description coming soon."));
     }
+    $("#lightbox-actions").empty().append(buildActionIcon(project.liveURL, liveIcon, galleryLiveText), buildActionIcon(project.repoURL, repoIcon, galleryRepoText))
 
     $("#lightbox").fadeIn();
     $('body').addClass("disable-scrolling");
     $('.unfocus-for-lightbox').addClass("blur-content");
+    $('#menu-toggle').addClass("hide-content");
     $('#scroll-to-top').fadeOut();
     setTimeout( function() {
         lightboxOpen = true;
@@ -165,10 +169,14 @@ function closeLightbox() {
     $("#lightbox").fadeOut();
     $('body').removeClass("disable-scrolling");
     $('.unfocus-for-lightbox').removeClass("blur-content");
-    if($(window).scrollTop() > $(window).height()) {
-        $('#scroll-to-top').fadeIn();
-    }
-    lightboxOpen = false;
+    
+    setTimeout( function() {
+        $('#menu-toggle').removeClass("hide-content");
+        if($(window).scrollTop() > $(window).height()) {
+            $('#scroll-to-top').fadeIn();
+        }
+        lightboxOpen = false;
+    }, 300);
 
 }
 

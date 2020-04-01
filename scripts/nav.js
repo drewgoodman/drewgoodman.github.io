@@ -20,9 +20,11 @@ function closeSidebarMenu() {
     $("#menu-overlay").fadeOut();
     $("#menu-sidebar").removeClass("open");
     menuActive = false;
-    if($(window).scrollTop() > $(window).height()) {
-        $('#scroll-to-top').fadeIn();
-    }
+    setTimeout( function() {
+        if($(window).scrollTop() > $(window).height()) {
+            $('#scroll-to-top').fadeIn();
+        }
+    }, 200);
     $('body').removeClass("disable-scrolling");
     return true;
 }

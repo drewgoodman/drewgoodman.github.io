@@ -4,10 +4,14 @@
     filter: blur(5px);
 }
 
+.hide-content {
+    display: none !important;
+}
+
 #lightbox {
     position: fixed;
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     z-index: 7;
     color: white;
     display: none;
@@ -25,8 +29,8 @@
 .lightbox-close {
     font-size: 3em;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 5%;
+    right: 5%;
     cursor: pointer;
 }
 
@@ -65,10 +69,65 @@
     padding: 0;
 }
 
+#lightbox-text {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
 #lightbox-skills-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
     grid-gap: 10px;
     margin-top: 10px;
     margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+/* Mobile styles */
+
+    #lightbox {
+        height: 100vh;
+    }
+
+    .lightbox-close {
+        font-size: 1.9em;
+        top: 15px;
+        right: 15px;
+    }
+
+    .lightbox-container {
+        height: calc(100vh - 75px);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 0;
+        padding-top: 60px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+    #lightbox-title {
+        font-size: 1.3em;
+        position: fixed;
+        top: 25px;
+        left: 15px;
+    }
+
+    .lightbox-divider {
+        position: fixed;
+        left: 0;
+    }
+    
+    #lightbox-skills-wrapper {
+        grid-template-columns: repeat(auto-fill, 65px);
+        grid-gap: 3px;
+        font-size: 13px;
+    }
+
+    #lightbox-text {
+        font-size: .8em;
+    }
+
 }
