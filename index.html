@@ -10,10 +10,12 @@
     <script src="https://kit.fontawesome.com/d58eb19ed0.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/portfolio.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Special+Elite|Share+Tech+Mono|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Special+Elite|Share+Tech+Mono|Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/media.css">
@@ -27,8 +29,82 @@
         <span class="line bottom"></span>
     </div>
     <div id="scroll-to-top" class="nav-btn no-select"><i class="fas fa-arrow-up"></i></div>
+    <div id="lightbox">
+        <div id="lightbox-overlay" class="lightbox-click-close"></div>
+        <div class="lightbox-close lightbox-click-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="lightbox-container">
+            <div id="lightbox-gallery"></div>
+            <div class="lightbox-content">
+                <h1 id="lightbox-title">Project Name</h1>
+                <div class="lightbox-divider"></div>
+                <div id="lightbox-skills-wrapper">
+                    <div class="project-skill no-select">HTML5</div>
+                    <div class="project-skill no-select">CSS3</div>
+                    <div class="project-skill no-select">jQuery</div>
+                </div>
+                <div id="lightbox-text">
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nisi sed qui molestias,
+                        laudantium
+                        aut veniam provident iste est maiores earum ut placeat, voluptates mollitia inventore
+                        consequatur
+                        tempore unde eveniet quidem necessitatibus. Eveniet sed qui molestiae cum temporibus expedita
+                        deserunt porro. Tenetur odit sunt omnis quia nisi iusto architecto recusandae exercitationem
+                        animi
+                        tempora? Corrupti odit dolor dicta itaque, quas voluptas aspernatur, sequi porro accusantium
+                        nemo,
+                        fuga fugiat numquam? Exercitationem nisi beatae aliquid sed sit omnis nulla eveniet, dolorem non
+                        optio a expedita fugiat cumque aut ducimus officiis, in accusamus sint! Eligendi tempora natus
+                        ipsam
+                        vitae illo voluptates itaque harum sapiente numquam reprehenderit excepturi quo beatae animi eum
+                        placeat ratione totam quas sit temporibus voluptatum deserunt ipsa, ut adipisci id. Est quos
+                        exercitationem facere cupiditate consequatur suscipit officia quia!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nisi sed qui molestias,
+                            laudantium
+                            aut veniam provident iste est maiores earum ut placeat, voluptates mollitia inventore
+                            consequatur
+                            tempore unde eveniet quidem necessitatibus. Eveniet sed qui molestiae cum temporibus expedita
+                            deserunt porro. Tenetur odit sunt omnis quia nisi iusto architecto recusandae exercitationem
+                            animi
+                            tempora? Corrupti odit dolor dicta itaque, quas voluptas aspernatur, sequi porro accusantium
+                            nemo,
+                            fuga fugiat numquam? Exercitationem nisi beatae aliquid sed sit omnis nulla eveniet, dolorem non
+                            optio a expedita fugiat cumque aut ducimus officiis, in accusamus sint! Eligendi tempora natus
+                            ipsam
+                            vitae illo voluptates itaque harum sapiente numquam reprehenderit excepturi quo beatae animi eum
+                            placeat ratione totam quas sit temporibus voluptatum deserunt ipsa, ut adipisci id. Est quos
+                            exercitationem facere cupiditate consequatur suscipit officia quia!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nisi sed qui molestias,
+                                laudantium
+                                aut veniam provident iste est maiores earum ut placeat, voluptates mollitia inventore
+                                consequatur
+                                tempore unde eveniet quidem necessitatibus. Eveniet sed qui molestiae cum temporibus expedita
+                                deserunt porro. Tenetur odit sunt omnis quia nisi iusto architecto recusandae exercitationem
+                                animi
+                                tempora? Corrupti odit dolor dicta itaque, quas voluptas aspernatur, sequi porro accusantium
+                                nemo,
+                                fuga fugiat numquam? Exercitationem nisi beatae aliquid sed sit omnis nulla eveniet, dolorem non
+                                optio a expedita fugiat cumque aut ducimus officiis, in accusamus sint! Eligendi tempora natus
+                                ipsam
+                                vitae illo voluptates itaque harum sapiente numquam reprehenderit excepturi quo beatae animi eum
+                                placeat ratione totam quas sit temporibus voluptatum deserunt ipsa, ut adipisci id. Est quos
+                                exercitationem facere cupiditate consequatur suscipit officia quia!</p>
+                </div>
+                <br>
+                <div id="lightbox-actions">
+                    <a class="project-action" href="https://drg-jquery-todo.herokuapp.com" target="_blank"><i
+                            class="fas fa-desktop"></i>Try it Live</a>
+                    <a class="project-action" href="https://github.com/drewgoodman/jQuery-ToDoList" target="_blank"><i
+                            class="fas fa-code"></i>See the Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="menu-overlay"></div>
-    <div id="menu-sidebar" class="side-bar no-select">
+    <div id="menu-sidebar" class="side-bar no-select unfocus-for-lightbox">
         <img class="profile-pic" src="static/images/profile.jpg">
         <div class="profile-title profile-text">
             <div class="profile-name">Drew R. Goodman //</div>
@@ -50,7 +126,7 @@
             </div>
         </div>
     </div>
-    <div class="page-container">
+    <div class="page-container unfocus-for-lightbox">
         <div class="page-content-wrapper">
             <div id="home">
                 <div class="home-wrapper home-shader no-select">

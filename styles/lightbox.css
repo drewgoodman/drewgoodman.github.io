@@ -1,0 +1,74 @@
+
+
+.blur-content {
+    filter: blur(5px);
+}
+
+#lightbox {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 7;
+    color: white;
+    display: none;
+}
+
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.lightbox-close {
+    font-size: 3em;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.lightbox-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    padding: 10%;
+    height: 50vh;
+}
+
+#lightbox-gallery, .lightbox-content, .lightbox-actions {
+    z-index: 2;
+}
+
+#lightbox-gallery {
+    background: black;
+    background-image: url("../static/images/project/petstash-mobile2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lightbox-divider {
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.lightbox-content {
+    overflow-y: scroll;
+}
+
+#lightbox-title {
+    margin: 0;
+    padding: 0;
+}
+
+#lightbox-skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
