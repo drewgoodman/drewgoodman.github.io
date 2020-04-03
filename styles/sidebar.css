@@ -15,7 +15,7 @@
     width: 420px;
     height: 100vh;
     display: grid;
-    grid-template-rows: [s] 1fr [profile-s] 200px [profile-e] 20px [title-s] 160px [title-e links-s] 240px [links-e contacts-s] 100px [contacts-e] 1fr [e];
+    grid-template-rows: [s] 2fr [profile-s] 200px [profile-e] .5fr [title-s] 160px [title-e] .5fr [links-s] 220px [links-e] .5fr [contacts-s] 100px [contacts-e] 1fr [e];
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -29,6 +29,7 @@
     justify-content: left;
     padding-left: 30px;
     letter-spacing: normal;
+    
 }
 
 .profile-pic {
@@ -45,6 +46,11 @@
     grid-row: title-s/title-e;
     color: white;
     font-family: 'Oswald', sans-serif;
+    -webkit-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    -moz-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 .profile-name {
@@ -72,21 +78,32 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-row-gap: 10px;
-    margin-left: 20%;
+    padding-left: 20%;
 }
 
-.profile-links a {
+.profile-links > .profile-link {
     text-decoration: none;
     font-family: 'Special Elite', cursive;
     color: white;
     font-size: 1.5em;
     position: relative;
     overflow: hidden;
-    width: 170px;
+    width: 240px;
     padding-top: 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    -webkit-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    -moz-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
+    height: 30px;
+
 }
 
-.profile-links a:after {
+.profile-link i {
+    text-align: center;
+}
+
+.profile-links  > .profile-link:after {
     position: absolute;
     border-radius: 20px;
     transition: .2s;
@@ -99,7 +116,7 @@
     transition: 0.3s all ease-in;
 }
 
-.profile-links a:hover:after {
+.profile-links  > .profile-link:hover:after {
     width: 100%;
 }
 
