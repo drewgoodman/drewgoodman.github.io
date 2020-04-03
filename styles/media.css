@@ -9,6 +9,12 @@
         padding-left: 0;
         width: 280px;
     }
+    
+    .profile-links > .profile-link {
+        padding-left: 0;
+        width: 280px;
+    }
+    
 
     .page-content-wrapper {
         margin-left: 350px;
@@ -53,11 +59,15 @@
         padding-left: 0;
         width: 240px;
     }
+    .profile-links > .profile-link {
+        padding-left: 0;
+        width: 240px;
+    }
 
     .profile-desc {
         font-size: .8em;
     }
-    
+
     .profile-contact-icons {
         /* margin-left: 10px; */
     }
