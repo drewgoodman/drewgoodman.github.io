@@ -4,6 +4,11 @@
     .side-bar {
         width: 350px;
     }
+    
+    .profile-text {
+        padding-left: 0;
+        width: 280px;
+    }
 
     .page-content-wrapper {
         margin-left: 350px;
@@ -27,6 +32,7 @@
         font-size: 2.1em;
     }
 
+
 }
 
 @media only screen and (max-width: 1050px) {
@@ -43,9 +49,17 @@
         left: 0px;
     }
 
+    .profile-text {
+        padding-left: 0;
+        width: 240px;
+    }
+
+    .profile-desc {
+        font-size: .8em;
+    }
     
     .profile-contact-icons {
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .page-content-wrapper {
@@ -204,7 +218,7 @@
 /* In case of landscape ipad and smaller viewport heights */
 
     .side-bar {
-        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 80px [title-e links-s] 200px [links-e contacts-s] 70px [contacts-e] 1fr [e];
+        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 160px [title-e links-s] 160px [links-e] 10px [contacts-s] 50px [contacts-e] 1fr [e];
         
     }
 
@@ -214,7 +228,12 @@
     }
 
     .profile-links {
-        grid-row-gap: 10px;
+        grid-row-gap: 5px;
+        font-size: .8em;
+    }
+
+    .profile-contact-icons {
+        font-size: 80%;
     }
 
 

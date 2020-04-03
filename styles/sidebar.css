@@ -15,7 +15,7 @@
     width: 420px;
     height: 100vh;
     display: grid;
-    grid-template-rows: [s] 1fr [profile-s] 200px [profile-e] 20px [title-s] 100px [title-e links-s] 240px [links-e contacts-s] 100px [contacts-e] 1fr [e];
+    grid-template-rows: [s] 1fr [profile-s] 200px [profile-e] 20px [title-s] 160px [title-e links-s] 240px [links-e contacts-s] 100px [contacts-e] 1fr [e];
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -25,9 +25,10 @@
 
 .profile-text {
     text-transform: uppercase;
-    width: 100%;
+    width: 300px;
     justify-content: left;
     padding-left: 30px;
+    letter-spacing: normal;
 }
 
 .profile-pic {
@@ -35,6 +36,9 @@
     width: 200px;
     border-radius: 50%;
     grid-row: profile-s/profile-e;
+    -webkit-box-shadow: 3px 6px 9px 0px rgba(36,11,54,1);
+    -moz-box-shadow: 3px 6px 9px 0px rgba(36,11,54,1);
+    box-shadow: 3px 6px 9px 0px rgba(36,11,54,1);
 }
 
 .profile-title {
@@ -43,12 +47,32 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.profile-name {
+    font-size: 1.2em;
+}
+
+.profile-job {
+    color: #cfcfcf;
+    margin-left: 5px;
+}
+
+
+.profile-desc {
+    text-transform: none;
+    font-size: .9em;
+    font-weight: 200;
+    margin-left: 10px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
 
 .profile-links {
     grid-row: links-s/links-e;
     display: grid;
     grid-template-rows: 1fr;
     grid-row-gap: 10px;
+    margin-left: 20%;
 }
 
 .profile-links a {
@@ -56,7 +80,6 @@
     font-family: 'Special Elite', cursive;
     color: white;
     font-size: 1.5em;
-    margin-left: 15px;
     position: relative;
     overflow: hidden;
     width: 170px;
@@ -90,7 +113,7 @@
     grid-gap: 40px;
     align-items: center;
     justify-items: center;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .profile-contact-icons > .contact-link {
