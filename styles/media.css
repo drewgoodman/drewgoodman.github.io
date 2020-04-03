@@ -13,6 +13,7 @@
     .profile-links > .profile-link {
         padding-left: 0;
         width: 280px;
+        font-size: 1.3em;
     }
     
 
@@ -239,12 +240,20 @@
 
     .profile-links {
         grid-row-gap: 5px;
-        font-size: .8em;
+    }
+
+    .profile-links > .profile-link {
+        font-size: 1.1em;
+        height: 25px;
     }
 
     .profile-contact-icons {
         font-size: 80%;
     }
+
+    .contact-link:after {
+        width: 110%;
+        height: 110%;
 
     .page-footer {
         font-size: 80%;

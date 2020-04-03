@@ -77,13 +77,13 @@
     grid-row: links-s/links-e;
     display: grid;
     grid-template-rows: 1fr;
-    grid-row-gap: 10px;
-    /* padding-left: 20%; */
+    grid-row-gap: 7px;
 }
 
 .profile-links > .profile-link {
     text-decoration: none;
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Special Elite', cursive; */
+    font-family: 'Share Tech Mono', monospace;
     color: white;
     font-size: 1.5em;
     position: relative;
@@ -91,12 +91,13 @@
     padding-top: 10px;
     width: 300px;
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 50px 1fr;
     -webkit-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
     -moz-box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
     box-shadow: 7px 7px 5px -6px rgba(0,0,0,0.56);
     height: 30px;
     transition: 0.3s all ease-in;
+    text-shadow: #240b36 3px 2px 1px;
 
 }
 
@@ -127,6 +128,7 @@
 
 .profile-contact {
     grid-row: contacts-s/contacts-e;
+    margin-left: 5px;
 }
 
 .profile-contact-icons {
