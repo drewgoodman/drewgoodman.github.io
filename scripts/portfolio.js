@@ -117,7 +117,7 @@ const repoIcon = '<i class="fas fa-code">';
 const repoText = "Code";
 const galleryRepoText = "See the Code"
 const infoIcon = '<i class="fas fa-question-circle">';
-const infoText = "Info";
+const infoText = "More Info";
 
 var lightboxOpen = false;
 

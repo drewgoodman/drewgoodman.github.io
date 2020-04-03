@@ -79,3 +79,9 @@ $(document).on('click', 'a[href^="#"]', function (e) {
         scrollTop: $($(this).attr('href')).offset().top
     }, 800, 'linear');
 });
+
+$(document).on('click', 'a', function () {
+    setTimeout( function() {
+        $('a').blur();
+    }, 200);
+})

@@ -218,7 +218,7 @@
 /* In case of landscape ipad and smaller viewport heights */
 
     .side-bar {
-        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 160px [title-e links-s] 160px [links-e] 10px [contacts-s] 50px [contacts-e] 1fr [e];
+        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 160px [title-e] 1fr [links-s] 160px [links-e] 1fr 10px [contacts-s] 50px [contacts-e] 1fr [e];
         
     }
 
@@ -236,8 +236,19 @@
         font-size: 80%;
     }
 
+    .page-footer {
+        font-size: 80%;
+    }
+
 
 }
+
+@media only screen and (max-height: 560px) {
+    .side-bar {
+        overflow-y: scroll;
+    }
+}
+
 
 @media only screen and (max-height: 500px) {
 
