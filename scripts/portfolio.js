@@ -42,7 +42,7 @@ const projects = [
         desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
         skills: ["JavaScript", "HTML5", "CSS3"],
         galleryText: [
-            "A reacreation of a mini-game from a 1998 release, Final Fantasy VIII, called Triple Triad. It was built over the course of a weekend as a static HTML page.",
+            "Recreation of a side activity from a 1998 Playstation game, Final Fantasy VIII. It was built over the course of a weekend as a static HTML page.",
             "It allows for a two-player experience where each player can choose a deck of 5 cards out of a small library. They will then be taken to a simple point-and-click interface where they may play matches of Triple Triad up until the point one is declared a winner. Rules are available in the code repository's readme file.",
             "Gameplay consists of a simple point and click interface with a turn count and game state controlled by JavaScript. CSS animations are dynamically added and removed from the game board's cards in order to simulate play effects and flipping.",
             "I started this project following the Bottega Diner interface as a means to get in some practice with more complex scripting. The biggest challenge when creating this app was needing to account for all the potential user inputs at any point in the game state. After the first deployment, the code was refactored slightly to reduce all references to player 1 and player 2 down into two interchangeable object references, significantly reducing the code in the process.",

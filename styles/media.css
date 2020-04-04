@@ -10,7 +10,7 @@
         width: 280px;
     }
     
-    .profile-links > .profile-link {
+    .profile-link {
         padding-left: 0;
         width: 280px;
         font-size: 1.3em;
@@ -60,7 +60,7 @@
         padding-left: 0;
         width: 240px;
     }
-    .profile-links > .profile-link {
+    .profile-link {
         padding-left: 0;
         width: 240px;
     }
@@ -91,8 +91,6 @@
     }
 
     .page-footer {
-        background-color: #333;
-        color: #ccc;
     }
 
     #menu-toggle {
@@ -229,7 +227,7 @@
 /* In case of landscape ipad and smaller viewport heights */
 
     .side-bar {
-        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 160px [title-e] 1fr [links-s] 160px [links-e] 1fr 10px [contacts-s] 50px [contacts-e] 1fr [e];
+        grid-template-rows: [s] 1fr [profile-s] 150px [profile-e] 10px [title-s] 160px [title-e] 1fr [links-s] 120px [links-e] 1fr 10xp [contacts-s] 80px [contacts-e] 1fr [e];
         
     }
 
@@ -242,7 +240,7 @@
         grid-row-gap: 5px;
     }
 
-    .profile-links > .profile-link {
+    .profile-link {
         font-size: 1.1em;
         height: 25px;
     }
@@ -251,9 +249,14 @@
         font-size: 80%;
     }
 
+    .profile-contact > .profile-link {
+        margin-bottom: 10px;
+    }
+
     .contact-link:after {
         width: 110%;
         height: 110%;
+    }
 
     .page-footer {
         font-size: 80%;
