@@ -153,14 +153,11 @@
 .home-btn a {
     margin-right: 300px;
 }
-/* 
-.home-btn:hover, .home-btn:active {
-    background-color: #ccc;
-    color: #333;
-} */
+
 
 .home-btn:nth-of-type(1) {
     grid-column: first-s/first-e;
+    grid-row: 1/-1;   /* TODO: Eventually comment this line out once 2 buttons become necessary again.*/
 }
 
 .home-btn:nth-of-type(2) {
