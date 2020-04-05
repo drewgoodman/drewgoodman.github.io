@@ -5,7 +5,7 @@ const projects = [
         liveURL: "https://petstash-supply-co.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-StoreFront",
         desc: "Functional eCommerce site with account signup, searching, and checkout",
-        skills: ["React.js", "SCSS", "Postman"],
+        skills: ["React.js", "SCSS"],
         galleryImage: ["petstash-1.png"],
         galleryText: [
             "An eCommerce site mockup for purchasing pet supplies as a final class project. Built in React.js and styled with SCSS.",
