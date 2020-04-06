@@ -81,7 +81,7 @@ const projects = [
     },
 
     {
-        title: "eCommerce Mockup",
+        title: "eCommerce UI Mockup",
         coverImage: "eCommerce.png",
         liveURL: "https://drgood-ecommerce-react.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/practice-ecommerce-react-app",
