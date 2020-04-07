@@ -85,6 +85,7 @@
     font-weight: 600;
     color: #FFFFFF;
     text-shadow: 3px 5px 2px #171717;
+    position: relative;
 }
 
 .project-divider {
@@ -94,6 +95,7 @@
     background-color: #ccc;
     transform: translateY(-4px);
     z-index: 1;
+    position: relative;
 }
 
 .project-shader {
@@ -113,6 +115,7 @@
     align-items: center;
     color: white;
     font-size: 80%;
+    position: relative;
 }
 
 .project-skills-wrapper {
@@ -120,6 +123,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
     grid-gap: 10px;
+    position: relative;
 }
 
 .project-skill {
