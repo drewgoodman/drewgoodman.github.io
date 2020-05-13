@@ -1,4 +1,17 @@
 const projects = [
+    // {
+    //     title: "The Good Blog",
+    //     coverImage: "",
+    //     liveURL: "https://drgood-blog.herokuapp.com",
+    //     repoURL: "https://github.com/drewgoodman/Django-FirstBlog",
+    //     desc: "Blog site with CRUD functions for a PostgreSQL database and AWS S3 static hosting.",
+    //     skills: ["Django","Python","Bootstrap","PostGreSQL"],
+    //     galleryImage: [""],
+    //     galleryText: [
+    //         ""
+    //     ]
+    // },
+
     {
         title: "PetStash Supply Co.",
         coverImage: "petstash-front-banner.jpg",
@@ -37,7 +50,7 @@ const projects = [
     {
         title: "Triple Triad Browser Game",
         coverImage: "tripletriad-banner.png",
-        liveURL: "https://drg-triple-triad.herokuapp.com",
+        playURL: "https://drg-triple-triad.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Triple-Triad",
         desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
         skills: ["JavaScript", "HTML5", "CSS3"],
@@ -55,7 +68,7 @@ const projects = [
         coverImage: "todo-list.png",
         liveURL: "https://drg-jquery-todo.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
-        desc: "Basic to-do list app with complete and delete functions.",
+        desc: "Basic to-do list app with complete and delete functions using jQuery on a static page.",
         skills: ["jQuery", "HTML5", "CSS3"],
         galleryText: [
             "What it says on the tin -- it's a static HTML page that lets you track your tasks and check them off as you complete them.",
@@ -107,15 +120,36 @@ const projects = [
             "The biggest challenge I faced was trying to figure out a way to dynamically track which HTML elements corresponded to specific products or track which part of the order needed to be deleted with each trash button. My beginner solution at the time was to add a very specific event listener at the time of creation that ensured the onClick function would pass the correct index as an argument. Much later on I would learn to better take advantage of element attributes and child node order for future projects.",
             "While the menu and text-size scales to viewport width, this page is not considered mobile friendly."
         ]
+    },
+
+    {
+        title: "Fantastic Fries",
+        coverImage: "coding-fries.jpg",
+        liveURL: "https://drgood-fantastic-fries.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/fantastic-fries-html-practice",
+        desc: "Front end mockup for a restaurant built in HTML and CSS.",
+        skills: ["HTML5","CSS"],
+        galleryText: [
+            "My first web project!",
+            "Nothing too fancy; a static HTML layout site using HTML and CSS styling with an embedded Google Maps locator.",
+            "Features custom animations, parallex scrolling images, media queries, and a custom form. Complete with a custom favicon and a splash of PHP so that it would deploy on Heroku."
+        ]
     }
 ]
+
 
 const liveIcon = '<i class="fas fa-desktop">';
 const liveText = "Live";
 const galleryLiveText = "Try It Live";
+
+const playIcon = '<i class="fas fa-gamepad">';
+const playText = "Play";
+const galleryPlayText = "Play It Live"
+
 const repoIcon = '<i class="fas fa-code">';
 const repoText = "Code";
 const galleryRepoText = "See the Code"
+
 const infoIcon = '<i class="fas fa-question-circle">';
 const infoText = "More Info";
 
@@ -138,7 +172,11 @@ function buildProject(project, projectIndex) {
 
     var projectActions = $("<div></div", { "class": "project-actions project-bg" });
     var newInfoIcon = $("<a></a>", { "class": "project-action info-btn", "project-index": projectIndex }).append($(infoIcon), infoText)
-    projectActions.append(buildActionIcon(project.liveURL, liveIcon, liveText), buildActionIcon(project.repoURL, repoIcon, repoText), newInfoIcon);
+    projectActions.append(
+        buildActionIcon(project.liveURL, liveIcon, liveText),
+        buildActionIcon(project.playURL, playIcon, playText),
+        buildActionIcon(project.repoURL, repoIcon, repoText),
+        newInfoIcon);
 
     var projectTitle = $("<div></div>", { "class": "project-title" }).append(project.title);
 
@@ -196,7 +234,11 @@ function openLightbox(projectIndex) {
     } else {
         $("#lightbox-text").append($("<p></p>").text("Project description coming soon."));
     }
-    $("#lightbox-actions").empty().append(buildActionIcon(project.liveURL, liveIcon, galleryLiveText), buildActionIcon(project.repoURL, repoIcon, galleryRepoText))
+    $("#lightbox-actions").empty().append(
+        buildActionIcon(project.liveURL, liveIcon, galleryLiveText),
+        buildActionIcon(project.playURL, playIcon, galleryPlayText),
+        buildActionIcon(project.repoURL, repoIcon, galleryRepoText)
+        )
 
     $("#lightbox").fadeIn();
     $('.lightbox-content').animate({scrollTop: 0}, 0);
