@@ -12,6 +12,7 @@ body {
 
 .page-content-wrapper {
     margin-left: 420px;
+    overflow-x: hidden;
 }
 
 .page-content {
@@ -19,6 +20,26 @@ body {
     padding-right: 130px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+}
+
+.page-content:nth-child(n+3):before {
+    content: "";
+    position: absolute;
+    top: -3vw;
+    left: 0;
+    border-bottom: 3vw solid white;
+    border-left: 100vw solid transparent;
+    z-index: 0;
+}
+
+.page-content:nth-child(odd) {
+    background-color: #e3e3e3;
+}
+
+.page-content:nth-child(odd):before {
+    border-bottom: 3vw solid #e3e3e3;
+
 }
 
 .page-footer {
@@ -43,8 +64,4 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
     text-transform: uppercase;
-}
-
-.off-white {
-    background-color: #e3e3e3;
 }
