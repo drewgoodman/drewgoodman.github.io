@@ -24,7 +24,7 @@
         content="https://drewgoodman.github.io/static/images/meta_img.jpg" />
     <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://drewgoodman.github.io" />
     <title>Drew R. Goodman | Full Stack Developer</title>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d58eb19ed0.js"></script>
     <script src="scripts/portfolio.js"></script>
@@ -82,7 +82,7 @@
         </div>
         <div class="profile-item profile-links profile-text">
             <a class="profile-link" href='#home'><i class="fas fa-home"></i>Home</a>
-            <a class="profile-link" href='#portfolio'><i class="fas fa-laptop-code"></i>Portfolio</a>
+            <a class="profile-link" href='#portfolio-personal'><i class="fas fa-laptop-code"></i>Portfolio</a>
             <a class="profile-link" href='download/drgoodman_resume.pdf' download><i class="fas fa-paperclip"></i>Resume
                 (PDF)</a>
         </div>
@@ -109,7 +109,7 @@
                         <h2>I'm a Full Stack Web Developer.</h2>
                     </div>
                     <div class="home-buttons">
-                        <a id="viewworks-btn" class="home-btn" href="#portfolio">See projects</a>
+                        <a id="viewworks-btn" class="home-btn" href="#portfolio-personal">See projects</a>
                         <!-- <a id="getintouch-btn" class="home-btn" href="#contact">Get in touch</a> -->
                     </div>
                 </div>
@@ -134,17 +134,21 @@
                             <i class="fas fa-file-pdf"></i>
                         </div>
                         <div class="resume-title">
-                            Graphic Version (*.pdf)
+                            Graphic Version
                         </div>
                         <div class="resume-btn-wrapper">
-                            <div class="resume-btn">
-                                <i class="far fa-folder-open"></i>
-                                Open in new window
-                            </div>
-                            <div class="resume-btn">
-                                <i class="fas fa-download"></i>
-                                Download (40kb)
-                            </div>
+                            <a href='download/drgoodman_resume.pdf' target="_blank">
+                                <div class="resume-btn">
+                                    <i class="far fa-folder-open"></i>
+                                    Open in new window
+                                </div>
+                            </a>
+                            <a href='download/drgoodman_resume.pdf' download>
+                                <div class="resume-btn">
+                                    <i class="fas fa-download"></i>
+                                    Download *.pdf (40kb)
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="resume-card" id="resume-text">
@@ -153,17 +157,21 @@
                             <i class="far fa-file-word"></i>
                         </div>
                         <div class="resume-title">
-                            Text Version (*.docx)
+                            Text Version
                         </div>
                         <div class="resume-btn-wrapper">
-                            <div class="resume-btn">
-                                <i class="far fa-folder-open"></i>
-                                Open in new window
-                            </div>
-                            <div class="resume-btn">
-                                <i class="fas fa-download"></i>
-                                Download (40kb)
-                            </div>
+                            <a href='download/drgoodman_resume.docx' download>
+                                <div class="resume-btn">
+                                    <i class="fas fa-download"></i>
+                                    Download *.docx (40kb)
+                                </div>
+                            </a>
+                            <a href='download/drgoodman_resume.doc' download>
+                                <div class="resume-btn">
+                                    <i class="fas fa-download"></i>
+                                    Download *.doc (40kb)
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

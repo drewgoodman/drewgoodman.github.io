@@ -85,6 +85,12 @@
     grid-row: s-buttons/e-buttons;
 }
 
+.resume-btn-wrapper a {
+    text-decoration: none;
+    color: #250b36;
+
+}
+
 .resume-btn {
     border: 3px solid #250b36;
     border-radius: 8px;
@@ -92,7 +98,6 @@
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
-    text-decoration: none;
     font-weight: 500;
     margin: 15px;
 
