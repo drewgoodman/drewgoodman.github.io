@@ -1,0 +1,19 @@
+
+.skill-card {
+    background: blue;
+    height: 300px;
+    width: 250px;
+}
+
+.skill-card > .skill-icon {
+    width: 200px;
+    font-size: 10em;
+    background: rgba(255,255,255,0.4);
+    display: flex;
+    justify-content: center;
+    transform: translateX(12.5%) translateY(-12.5%);
+}
+
+#skills > i {
+    font-size: 10em;
+}
