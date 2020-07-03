@@ -1,15 +1,46 @@
 /* #240b36, #c31432 */
 
+.resume-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .resume-card {
-    width: 300px;
-    border: 5px solid #240b36;
+    width: 350px;
+    margin: 15px;
+    /* border: 5px solid #240b36; */
     border-radius: 10px;
     display: grid;
-    grid-template-rows: [s s-header] 120px [e-header s-icon] 77px [e-icon s-title] 50px [e-title s-buttons] 1fr [e-buttons] 20px [e]
+    grid-template-rows: [s s-header] 150px [e-header s-icon] 77px [e-icon s-title] 50px [e-title s-buttons] 1fr [e-buttons] 5px [e];
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
+    box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.37);
+    color: #250b36;
+}
+
+
+#resume-graphic > .resume-header {
+    background-color: #c314a6;
+    background-image: url("../static/images/background/resume-header2.jpg");
+}
+#resume-text > .resume-header {
+    background-color: #c314a6;
+    background-image: url("../static/images/background/resume-header1.jpg");
 }
 
 .resume-header {
-    background-color: #c31432;
+    background-size: cover;
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     grid-row: s-header/e-header;
     width: 100%;
 }
@@ -46,6 +77,8 @@
 .resume-title {
     grid-row: s-title/e-title;
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .resume-btn-wrapper {
@@ -53,16 +86,15 @@
 }
 
 .resume-btn {
-    border: 3px solid black;
+    border: 3px solid #250b36;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 600;
-    margin: 10px;
-
+    font-weight: 500;
+    margin: 15px;
 
     position: relative;
     overflow: hidden;
@@ -77,7 +109,7 @@
     left: -10%;
     height: 120%;
     transform: skewX(15deg);
-    background: #c31432;
+    background: #250b36;
     z-index: -1;
 }
 
