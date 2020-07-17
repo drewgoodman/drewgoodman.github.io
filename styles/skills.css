@@ -8,7 +8,7 @@
 .skill-card > .skill-icon {
     width: 200px;
     font-size: 10em;
-    background: rgba(255,255,255,0.4);
+    background: #fff;
     display: flex;
     justify-content: center;
     transform: translateX(12.5%) translateY(-12.5%);
