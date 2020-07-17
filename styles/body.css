@@ -43,12 +43,27 @@ body {
 }
 
 .page-footer {
-    height: 80px;
+    height: 90px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;;
     background-color: #333;
     color: #ccc;
+}
+
+.page-footer div:first-child {
+    margin-bottom: 10px;
+}
+
+.page-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in all;
+}
+
+.page-footer a:hover {
+    color: #c31432;
 }
 
 .no-select {

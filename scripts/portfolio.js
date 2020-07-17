@@ -1,16 +1,36 @@
 const projects = [
-    // {
-    //     title: "The Good Blog",
-    //     coverImage: "",
-    //     liveURL: "https://drgood-blog.herokuapp.com",
-    //     repoURL: "https://github.com/drewgoodman/Django-FirstBlog",
-    //     desc: "Blog site with CRUD functions for a PostgreSQL database and AWS S3 static hosting.",
-    //     skills: ["Django","Python","Bootstrap","PostGreSQL"],
-    //     galleryImage: [""],
-    //     galleryText: [
-    //         ""
-    //     ]
-    // },
+    {
+        title: "The Good Blog",
+        coverImage: "good-blog-banner.jpg",
+        liveURL: "https://drgood-blog.herokuapp.com",
+        repoURL: "https://github.com/drewgoodman/Django-FirstBlog",
+        desc: "Blog site with CRUD functions for a PostgreSQL database and AWS S3 static hosting.",
+        skills: ["Django","Python","Bootstrap","PostGreSQL"],
+        galleryImage: [""],
+        galleryText: [
+            "The Good Blog is a responsive blog built in Django 3.0. It features user authentication, an interface for drafting and posting new blog posts, pagination, basic search and filtering systems, and and a comment thread system for users. Page styling uses Bootstrap 3.3 as a base.",
+            "This project began as a tutorial project on learning the features of Django, and was updated overtime for more advanced functionality.",
+            "Database is SQLlite in development mode, PostGreSQL on the live Heroku site. Static files, media and new image uploades are handled by a CDN at Amazon Web Services.",
+            "Additional front-end navigation features include dynamically updated tags, categories, and monthly archives, managed by pre-save post receivers.",
+            "The back end includes custom workflow features like a custom settings module that will automatically use different configuration settings for development and production.",
+
+        ]
+    },
+
+    {
+        title: "Language Summit 2020",
+        coverImage: "language-summit.jpg",
+        liveURL: "https://languagesummit.com",
+        repoURL: "",
+        desc: "Informative website for an online streaming conference.",
+        skills: ["WordPress","CSS","Lightsail"
+        ],
+        galleryImage: ["language-summit2.png"],
+        galleryText: [
+            "Text goes here"
+        ],
+        client: true,
+    },
 
     {
         title: "PetStash Supply Co.",
@@ -193,7 +213,11 @@ function buildProject(project, projectIndex) {
         projectDesc,
         projectSkillsWrapper
     );
-    $("#projects-container").append(newProject);
+    if(project.client) {
+        $("#client-projects-container").append(newProject);
+    } else {
+        $("#projects-container").append(newProject);
+    }
 }
 
 function appendSkills(skills, newSkillsWrapper) {
