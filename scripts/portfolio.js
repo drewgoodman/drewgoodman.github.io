@@ -64,7 +64,7 @@ const projects = [
         skills: ["Python", "MySQL", "Flask", "Boostrap"],
         galleryText: [
             "The restful API and back office data management app for Pet Stash Supply Co. as a class project. Built with Python 3, Flask, Jinja, MySQL, and Bootstrap.",
-            "Additional libaries include WTForms, used for the backend UI to easily add product and category info, Passlib to encrypt user passwords, and Flask-CORS to allow cross-site requests for the storefront.",
+            "Additional libraries include WTForms, used for the backend UI to easily add product and category info, Passlib to encrypt user passwords, and Flask-CORS to allow cross-site requests for the storefront.",
             "Building this API from scratch took up the bulk of the time alloted for the project, and presented several challenges I hadn't previously dealt with while learning how to code. I leaned on W3 schools, Stack Overflow, and even Youtube tutorials in order to construct the CRUD functionality and deploy a functioning app to Heroku.",
             "Other challenges included needing ton make a custom JSON encoder to avoid decimal dollar amounts getting converted to strings, authorizing cross-site requests from the deployed React app, and setting default values in a dropdown-box in a dynamic list to avoid user errors. MySQL Workbench and Postman were invaluable for testing the data queries and ensuring that the correct data was retrieved and posted.",
             "The MySQL database is hosted on Heroku via their ClearDB add-on, which allows for a free 5mb database. Because of this, most of the picture data used in the front-end app actually just points to images stored locally since there wasn't room to host them otherwise. "
@@ -274,6 +274,12 @@ function openLightbox(projectIndex) {
     $("#lightbox-skills-wrapper").empty()
     appendSkills(project.skills, $("#lightbox-skills-wrapper"));
     $("#lightbox-text").empty();
+    if (project.inProgress) {
+        inProgressAlert = $("<p></p>", {
+            "class": "lightbox-inprogress"
+        }).append(inProgressIcon, "Under construction. Check back soon for updates.")
+        $("#lightbox-text").append(inProgressAlert);
+    }
     if (project.galleryText) {
         project.galleryText.forEach(paragraph => {
             $("#lightbox-text").append($("<p></p>").text(paragraph));

@@ -50,7 +50,7 @@
 }
 
 .project-inprogress {
-    color: #dea731;
+    color: #fad201;
 }
 
 .project-active {
@@ -81,7 +81,7 @@
 }
 
 .project-inprogress i {
-    color: #dea731;
+    color: #fad201;
 }
 
 .project-title, .project-desc, .project-skills-wrapper {
