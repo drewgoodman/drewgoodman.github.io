@@ -40,17 +40,24 @@
 
 .project-action {
     font-family: 'Oswald', sans-serif;
-    color: white;
     text-decoration: none;
-    cursor: pointer;
     margin-left: 35px;
     margin-right: 5px;
     padding: 4px;
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
-.project-action:after {
+.project-inprogress {
+    color: #dea731;
+}
+
+.project-active {
+    cursor: pointer;
+}
+
+.project-active:after {
     position: absolute;
     transition: .3s;
     content: '';
@@ -62,7 +69,7 @@
     transition: 0.2s all ease-in-out;
 }
 
-.project-action:hover:after {
+.project-active:hover:after {
     width: 100%;
     left: 0;
 }
@@ -71,6 +78,10 @@
     color: white;
     font-size: 1.5em;
     padding-right: 5px;
+}
+
+.project-inprogress i {
+    color: #dea731;
 }
 
 .project-title, .project-desc, .project-skills-wrapper {
@@ -144,13 +155,11 @@
 
 .project-client-icon {
     z-index: 4;
-    grid-row: skill-s/skills-e;
     right: 30px;
     bottom: 30px;
-    /* position: absolute; */
-    position: absolute;
     height: 70px;
     width: 70px;
+    position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -1,3 +1,5 @@
+// title, coverImage, liveURL, playURL, repoURL, desc, skills, galleryImage, galleryText, inProgress, client, clientImage, 
+
 const projects = [
     {
         title: "The Good Blog",
@@ -14,7 +16,8 @@ const projects = [
             "Additional front-end navigation features include dynamically updated tags, categories, and monthly archives, managed by pre-save post receivers.",
             "The back end includes custom workflow features like a custom settings module that will automatically use different configuration settings for development and production.",
 
-        ]
+        ],
+        inProgress: true
     },
 
     {
@@ -28,6 +31,7 @@ const projects = [
         galleryText: [
             "Text goes here"
         ],
+        inProgress: true,
         client: true,
         clientImage: ["hallo-icon.png"],
     },
@@ -157,6 +161,7 @@ const projects = [
     }
 ]
 
+const inProgressIcon = '<i class="fas fa-tools">';
 
 const liveIcon = '<i class="fas fa-desktop">';
 const liveText = "Live";
@@ -191,12 +196,23 @@ function buildProject(project, projectIndex) {
         });
 
     var projectActions = $("<div></div", { "class": "project-actions project-bg" });
-    var newInfoIcon = $("<a></a>", { "class": "project-action info-btn", "project-index": projectIndex }).append($(infoIcon), infoText)
-    projectActions.append(
-        buildActionIcon(project.liveURL, liveIcon, liveText),
-        buildActionIcon(project.playURL, playIcon, playText),
-        buildActionIcon(project.repoURL, repoIcon, repoText),
-        newInfoIcon);
+    var newInfoIcon = $("<a></a>", { "class": "project-action project-active info-btn", "project-index": projectIndex }).append($(infoIcon), infoText)
+    if(project.inProgress) {
+        var inProgressAlert = $("<div></div>", {
+            "class": "project-action project-inprogress"
+        }).append(inProgressIcon,"Under Construction");
+        projectActions.append(
+            inProgressAlert,
+            buildActionIcon(project.repoURL, repoIcon, repoText),
+            );
+    } else {
+        projectActions.append(
+            buildActionIcon(project.liveURL, liveIcon, liveText),
+            buildActionIcon(project.playURL, playIcon, playText),
+            buildActionIcon(project.repoURL, repoIcon, repoText),
+            );
+    }
+    projectActions.append(newInfoIcon);
 
     var projectTitle = $("<div></div>", { "class": "project-title" }).append(project.title);
 
@@ -236,11 +252,11 @@ function appendSkills(skills, newSkillsWrapper) {
     return true;
 }
 
-function buildActionIcon(url, icon, text) {
+function buildActionIcon(url, icon, text, forLightbox=false) {
     if (url) {
         var newIcon = $("<a></a>",
             {
-                "class": "project-action",
+                "class": "project-action project-active",
                 "target": "_blank",
                 "href": url
             }).append($(icon), text);
