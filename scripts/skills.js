@@ -22,8 +22,63 @@ const skills = [
         type: "Language",
     },
     {
+        title: "React",
+        icon: "devicon-react-plain",
+        type: "Framework",
+    },
+    {
+        title: "Django",
+        icon: "devicon-django-plain",
+        type: "Framework",
+    },
+    {
+        title: "jQuery",
+        icon: "devicon-jquery-plain",
+        type: "Framework",
+    },
+    {
+        title: "Bootstrap",
+        icon: "devicon-bootstrap-plain",
+        type: "Framework",
+    },
+    {
         title: "Amazon Web Services",
         icon: "devicon-amazonwebservices-original",
+        type: "Tool",
+    },
+    {
+        title: "MySQL",
+        icon: "devicon-mysql-plain",
+        type: "Tool",
+    },
+    {
+        title: "MongoDB",
+        icon: "devicon-mongodb-plain",
+        type: "Tool",
+    },
+    {
+        title: "GitHub",
+        icon: "devicon-github-plain",
+        type: "Tool",
+    },
+    {
+        title: "Heroku",
+        icon: "devicon-heroku-plain",
+        type: "Tool",
+    },
+    {
+        title: "Visual Studio Code",
+        icon: "devicon-visualstudio-plain",
+        type: "Tool",
+    },
+    {
+        title: "Wordpress",
+        icon: "devicon-wordpress-plain",
+        type: "Tool",
+    },
+    {
+        title: "Slack",
+        icon: "devicon-slack-plain",
         type: "Tool",
     },
 
