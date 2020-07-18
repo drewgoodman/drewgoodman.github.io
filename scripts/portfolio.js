@@ -23,13 +23,13 @@ const projects = [
         liveURL: "https://languagesummit.com",
         repoURL: "",
         desc: "Informative website for an online streaming conference.",
-        skills: ["WordPress","CSS","Lightsail"
-        ],
+        skills: ["WordPress","CSS","Lightsail"],
         galleryImage: ["language-summit2.png"],
         galleryText: [
             "Text goes here"
         ],
         client: true,
+        clientImage: ["hallo-icon.png"],
     },
 
     {
@@ -213,6 +213,15 @@ function buildProject(project, projectIndex) {
         projectDesc,
         projectSkillsWrapper
     );
+    if(project.clientImage) {
+        newProject.append(
+            $("<div></div>",
+            {
+                "class": "project-client-icon",
+                "style": `background-image: url('../static/images/project/${project.clientImage}')`
+            })
+        )
+    }
     if(project.client) {
         $("#client-projects-container").append(newProject);
     } else {

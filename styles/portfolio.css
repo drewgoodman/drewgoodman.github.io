@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    
+    max-width: 780px;
     height: 300px;
 
     display: grid;
@@ -142,3 +142,16 @@
     box-shadow: 3px 4px 13px -4px rgba(0,0,0,0.75);
 }
 
+.project-client-icon {
+    z-index: 4;
+    grid-row: skill-s/skills-e;
+    right: 30px;
+    bottom: 30px;
+    /* position: absolute; */
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
