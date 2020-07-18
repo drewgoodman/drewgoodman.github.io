@@ -94,7 +94,7 @@ function buildSkill(skill) {
     });
 
     skillIcon.append(
-        $("<i></i>", { "class": `${skill.icon} colored`})
+        $("<i></i>", { "class": `${skill.icon} colored` })
     );
 
     var skillText = $("<div></div>", {
@@ -105,10 +105,15 @@ function buildSkill(skill) {
         skill.title
     )
 
-    newSkill.append(skillIcon,skillText);
+    newSkill.append(skillIcon, skillText);
 
-
-    $(".skills-grid").append(newSkill);
+    if (skill.type === "Language") {
+        $("#skills-language").append(newSkill);
+    } else if (skill.type === "Framework") {
+        $("#skills-framework").append(newSkill);
+    } else if (skill.type === "Tool") {
+        $("#skills-tool").append(newSkill);
+    }
 
 }
 function loadSkills() {
