@@ -82,6 +82,8 @@
 
 .lightbox-inprogress {
     color: #fad201;
+    padding-bottom: 7px;
+    padding-top: 5px;
 }
 
 .lightbox-inprogress i {

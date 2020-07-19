@@ -278,7 +278,7 @@
 
 }
 
-@media only screen and (max-height: 560px) {
+@media only screen and (max-height: 570px) {
     .side-bar {
         overflow-y: scroll;
     }

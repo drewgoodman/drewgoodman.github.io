@@ -1,5 +1,6 @@
 
 .skills-grid {
+    margin-left: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill,220px);
     grid-gap: 20px;
@@ -45,4 +46,65 @@ box-shadow: 5px 3px 15px -3px rgba(37,11,54,1);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .skills-grid {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 489px) {
+/* Breakpoint at which only 1 skill card fits at a time */
+    .skills-grid {
+        margin-left: 20px;
+        margin-right: 40px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        display: flex;
+        height: 60px;
+    }
+
+    .skill-card > .skill-icon {
+        height: 70px;
+        width: 70px;
+        font-size: 3.7em;
+        transform: translateY(-5px);
+        border-radius: 5px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .skill-card > .skill-icon:before {
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: white;
+        z-index: -1;
+        border-radius: 5px;
+    }
+
+    .skill-card > .skill-icon:after {
+        content: '';
+        height: 72px;
+        width: 72px;
+        background: #250b36;
+        opacity: .3;
+        position: absolute;
+        border-radius: 5px;
+        z-index: -2;
+        top: -1;
+        left: -1;
+    }
+
+    .skill-text {
+        height: 60px;
+        margin-left: 20px;
+    }
+
+
 }
