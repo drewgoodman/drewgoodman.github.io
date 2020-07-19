@@ -17,6 +17,11 @@ const skills = [
         type: "Language",
     },
     {
+        title: "Sass",
+        icon: "devicon-sass-original",
+        type: "Language",
+    },
+    {
         title: "CSS3",
         icon: "devicon-css3-plain",
         type: "Language",
