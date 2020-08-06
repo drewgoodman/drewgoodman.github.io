@@ -189,7 +189,9 @@
     .project-wrapper {
         height: 180px;
         /* padding-right: 15x; */
-        grid-template-rows: [action-s] 40px [action-e] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e e];
+        background-position: bottom;
+        /* grid-template-rows: [s] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e action-s] 40px [action-e e]; */
+        grid-template-rows: [s] 5px [title-s] 40px [title-e divider-s] 3px [divider-e] 1fr [desc-s] 30px [desc-e action-s] 40px [action-e e];
     }
 
     .project-bg {
@@ -200,6 +202,10 @@
         justify-content: space-around;
         font-size: 80%;
         padding-right: 0;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .project-action {
@@ -232,8 +238,6 @@
     .project-desc {
         padding-right: 10px;
         font-size: 70%;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
     }
 
     .project-client-icon {
@@ -241,6 +245,10 @@
         top: 60px;
         height: 50px;
         width: 50px;
+    }
+
+    .project-shader {
+    background: linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.7061799719887955) 90%, rgba(0,0,0,0.5059558823529411) 100%);
     }
 
     .page-footer {
