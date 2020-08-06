@@ -84,14 +84,16 @@
                 and debugging. Currently experienced with React.js, jQuery, Python, and SQL databases.</div>
         </div>
         <div class="profile-item profile-links profile-text">
-            <a class="profile-link" href='#home'><i class="fas fa-home"></i>Home</a>
+            <!-- <a class="profile-link" href='#home'><i class="fas fa-home"></i>Home</a> -->
             <a class="profile-link" href='#skills'><i class="fas fa-toolbox"></i>My Skills</a>
-            <a class="profile-link" href='#portfolio-personal'><i class="fas fa-laptop-code"></i>Portfolio</a>
+            <a class="profile-link" href='#portfolio-client'><i class="fas fa-laptop-code"></i>Client Work</a>
+            <a class="profile-link" href='#portfolio-personal'><i class="fas fa-project-diagram"></i>Projects</a>
             <a class="profile-link" href='#resume'><i class="fas fa-paperclip"></i>Resume</a>
+            <!-- <a class="profile-link" href='#contact'><i class="fas fa-phone"></i>Contact Me</a> -->
         </div>
 
         <div class="profile-contact profile-text">
-            <div class="profile-link"><i class="fas fa-phone"></i>Contact Me</div>
+            <!-- <div class="profile-link"><i class="fas fa-phone"></i>Contact Me</div> -->
             <div class="profile-contact-icons">
                 <a class="contact-link" href='https://www.linkedin.com/in/drew-r-goodman' target="_blank">
                     <i class="fab fa-linkedin-in"></i></a>
@@ -203,11 +205,63 @@
                 <div class="two-column">
                     <div class="column">
                         <p>Thanks for visiting! If you see something you're interested in or have any questions, feel
-                            free to contact me via <b>LinkedIn</b> or by <b>e-mail</b> and I will respond to you as soon as I can.</p>
+                            free to contact me via <b>LinkedIn</b> or by <b>e-mail</b> and I will respond to you as soon
+                            as I can.</p>
                         <p>I am currently looking for <b>internship</b> or <b>entry level</b> opportunities.</p>
+                        <div class="contact-spacer"></div>
+
+                        <a class="contact-btn-link" href='https://www.linkedin.com/in/drew-r-goodman' target="_blank">
+                            <div class="contact-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                                Visit my LinkedIn Profile
+                            </div>
+                        </a>
+                        <a class="contact-btn-link" href='https://github.com/drewgoodman' target="_blank">
+                            <div class="contact-btn">
+                                <i class="fab fa-github"></i>
+                                Visit my GitHub Repo
+                            </div>
+                        </a>
                     </div>
                     <div class="column">
-                        <div class="form">
+                        <div class="contact-form">
+                            <div class="form-header">
+                                <div class="form-title">Contact Me</div>
+                                <div class="form-desc">Just fill out the form below!</div>
+                            </div>
+                            <div class="form-info-fields">
+                                <div class="form-field">
+                                    <label for="form_firstname">first name</label>
+                                    <input type="text" placeholder="First Name" name="name" id="form_firstname"
+                                        required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="form_lastname">last name</label>
+                                    <input type="text" placeholder="Last Name" name="name" id="form_lastname" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="form_email">email</label>
+                                    <input type="email" placeholder="My e-mail is" name="email" id="form_email"
+                                        required>
+                                </div>
+                                <div class="form-field"><label for="form_subject">Subject Line</label>
+                                    <select placeholder="Subject Line" name="subject" id="form_subject" required>
+                                        <option disabled hidden selected>Pick a subject:</option>
+                                        <option>I'd like to start a project</option>
+                                        <option>I'd like to discuss a job opening</option>
+                                        <option>I'd like to discuss an internship opportunity</option>
+                                        <option>I'd like to ask a question</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-comment">
+                                <textarea id="form_comment" name="comment" placeholder="I'd like to talk about..."
+                                    cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <input class="contact-submit-btn" type="submit" value="Submit">
+                                or press ENTER
+                            </div>
 
                         </div>
                     </div>
@@ -216,7 +270,8 @@
             </div> -->
             <div class="page-footer">
                 <div>
-                    Page hosted by <a href="https://pages.github.com/">GitHub Pages</a>. View the code repo for this site <a href="https://github.com/drewgoodman/drewgoodman.github.io">here</a>.
+                    Page hosted by <a href="https://pages.github.com/">GitHub Pages</a>. View the code repo for this
+                    site <a href="https://github.com/drewgoodman/drewgoodman.github.io">here</a>.
                 </div>
                 <div>
                     &copy; 2020 Drew Goodman &#124; All rights reserved

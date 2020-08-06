@@ -15,7 +15,7 @@
     width: 420px;
     height: 100vh;
     display: grid;
-    grid-template-rows: [s] 2fr [profile-s] 200px [profile-e] .5fr [title-s] 160px [title-e] .5fr [links-s] 150px [links-e] 1fr [contacts-s] 130px [contacts-e] 2fr [e];
+    grid-template-rows: [s] 2fr [profile-s] 200px [profile-e] .5fr [title-s] 160px [title-e] .5fr [links-s] 200px [links-e] 1fr [contacts-s] 80px [contacts-e] 2fr [e];
     justify-content: center;
     align-items: center;
     justify-items: center;
