@@ -21,7 +21,7 @@ const projects = [
     },
 
     {
-        title: "Language Summit 2020",
+        title: "Language Summit 2021",
         coverImage: "language-summit.jpg",
         liveURL: "https://languagesummit.com",
         repoURL: "",
@@ -30,7 +30,7 @@ const projects = [
         galleryImage: ["language-summit2.png"],
         galleryText: [
             "'The Language Summit aims to democratize and improve education by bringing the language learning and edtech industries together.'",
-            "The official website for Language Summit 2020 is a collaboration project with the team at Hallo to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
+            "The official website for Language Summit 2021 is a collaboration project with the team at Hallo to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
             "Before coming on board as an intern with the company, it was determined the site would be built using the startup's existing Wordpress and Elementor licenses, with custom CSS styling added as needed. I've worked closely with the team to assist with the page design, event branding, site thematic elements, and set up the hosting service and IP address at Amazon Web Service's Lightsail.",
         ],
         inProgress: true,

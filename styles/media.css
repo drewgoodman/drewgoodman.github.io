@@ -182,8 +182,11 @@
         margin-left: 5px;
     }
 
-    #projects-container {
+    .projects-wrapper {
         grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding-left: 10px;
+        padding-right: 20px;
     }
 
     .project-wrapper {
@@ -191,11 +194,11 @@
         /* padding-right: 15x; */
         background-position: bottom;
         /* grid-template-rows: [s] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e action-s] 40px [action-e e]; */
-        grid-template-rows: [s] 5px [title-s] 40px [title-e divider-s] 3px [divider-e] 1fr [desc-s] 30px [desc-e action-s] 40px [action-e e];
+        grid-template-rows: [s] 5px [title-s] 40px [title-e divider-s] 3px [divider-e] 1fr [desc-s] 35px [desc-e action-s] 40px [action-e e];
     }
 
-    .project-bg {
-        background-color: rgba(0,0,0,0.9);
+    .project-shader {
+        background: linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.7061799719887955) 90%, rgba(0,0,0,0.5059558823529411) 100%);
     }
 
     .project-actions {
@@ -204,8 +207,8 @@
         padding-right: 0;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
     .project-action {
@@ -218,11 +221,11 @@
         grid-gap: 3px;
         font-size: 13px; */
     }
-/*     
+    
     .project-skill {
         height: 18px;
         width: 65px;
-    } */
+    }
 
     .project-title {
         font-size: 1.5em;
@@ -238,6 +241,7 @@
     .project-desc {
         padding-right: 10px;
         font-size: 70%;
+        height: 36px;
     }
 
     .project-client-icon {
@@ -247,9 +251,7 @@
         width: 50px;
     }
 
-    .project-shader {
-    background: linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.7061799719887955) 90%, rgba(0,0,0,0.5059558823529411) 100%);
-    }
+
 
     .page-footer {
         font-size: 75%;
