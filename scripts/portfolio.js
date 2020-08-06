@@ -313,6 +313,7 @@ function closeLightbox() {
     $("#lightbox").fadeOut();
     $('body').removeClass("disable-scrolling");
     $('.unfocus-for-lightbox').removeClass("blur-content");
+    $('.project-wrapper').removeClass('project-mobile-expand');
     $('.project-actions').addClass('project-mobile-toggle');
     $('.project-desc').addClass('project-mobile-toggle');
 
@@ -334,8 +335,10 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.project-wrapper', function () {
+        $('.project-wrapper').removeClass('project-mobile-expand');
         $('.project-actions').addClass('project-mobile-toggle');
         $('.project-desc').addClass('project-mobile-toggle');
+        $(this).addClass('project-mobile-expand');
         $(this).find('.project-actions').removeClass('project-mobile-toggle');
         $(this).find('.project-desc').removeClass('project-mobile-toggle');
     })
