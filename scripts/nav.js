@@ -51,6 +51,7 @@ $(document).ready(function() {
         if (menuActive) {
             closeSidebarMenu();
         } else {
+            closeMobilePortfolio();
             openSidebarMenu();
         }
     })
@@ -75,6 +76,7 @@ $(document).on('click', 'a[href^="#"]', function (e) {
     if(menuActive) {
         closeSidebarMenu();
     }
+    closeMobilePortfolio();
     $('html, body').stop().animate({
         scrollTop: $($(this).attr('href')).offset().top
     }, 800, 'linear');

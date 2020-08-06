@@ -183,6 +183,13 @@ const infoText = "Info";
 
 var lightboxOpen = false;
 
+
+function closeMobilePortfolio() {
+    $('.project-wrapper').removeClass('project-mobile-expand');
+    $('.project-actions').addClass('project-mobile-toggle');
+    $('.project-desc').addClass('project-mobile-toggle');
+}
+
 function loadProjects() {
     var projectIndex = 0;
     projects.forEach(project => {
@@ -313,10 +320,7 @@ function closeLightbox() {
     $("#lightbox").fadeOut();
     $('body').removeClass("disable-scrolling");
     $('.unfocus-for-lightbox').removeClass("blur-content");
-    $('.project-wrapper').removeClass('project-mobile-expand');
-    $('.project-actions').addClass('project-mobile-toggle');
-    $('.project-desc').addClass('project-mobile-toggle');
-
+    closeMobilePortfolio();
     setTimeout(function () {
         $('#menu-toggle').removeClass("hide-content");
         if ($(window).scrollTop() > $(window).height()) {
@@ -327,6 +331,7 @@ function closeLightbox() {
 
 }
 
+
 $(document).ready(function () {
 
     $(document).on('click', '.info-btn', function () {
@@ -335,9 +340,7 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.project-wrapper', function () {
-        $('.project-wrapper').removeClass('project-mobile-expand');
-        $('.project-actions').addClass('project-mobile-toggle');
-        $('.project-desc').addClass('project-mobile-toggle');
+        closeMobilePortfolio();
         $(this).addClass('project-mobile-expand');
         $(this).find('.project-actions').removeClass('project-mobile-toggle');
         $(this).find('.project-desc').removeClass('project-mobile-toggle');
