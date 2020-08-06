@@ -27,7 +27,7 @@ const projects = [
         repoURL: "",
         desc: "Informative website for an online streaming conference.",
         skills: ["WordPress","CSS","AWS S3"],
-        galleryImage: ["language-summit2.png"],
+        galleryImage: ["language-summit2.jpg"],
         galleryText: [
             "'The Language Summit aims to democratize and improve education by bringing the language learning and edtech industries together.'",
             "The official website for Language Summit 2021 is a collaboration project with the team at Hallo to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
@@ -45,7 +45,7 @@ const projects = [
         repoURL: "https://github.com/drewgoodman/PetStash-StoreFront",
         desc: "Functional eCommerce site with account signup, searching, and checkout",
         skills: ["React.js", "SCSS"],
-        galleryImage: ["petstash-1.png"],
+        galleryImage: ["petstash-1.jpg"],
         galleryText: [
             "An eCommerce site mockup for purchasing pet supplies as a final class project. Built in React.js and styled with SCSS.",
             "The user can create an account, sign in to that account afterwards, add items to their cart, delete them from the cart, and proceed to checkout. A record of their transaction can be found on their account page afterwards.",
@@ -59,7 +59,7 @@ const projects = [
 
     {
         title: "PetStash Backend API",
-        coverImage: "petstash-back2.png",
+        coverImage: "petstash-back2.jpg",
         liveURL: "https://petstash-backoffice.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-BackOfficeAPI",
         desc: "Restful API with CRUD functionality; handles the shop and user data.",
@@ -75,7 +75,7 @@ const projects = [
 
     {
         title: "Triple Triad Browser Game",
-        coverImage: "tripletriad-banner.png",
+        coverImage: "tripletriad-banner.jpg",
         playURL: "https://drg-triple-triad.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Triple-Triad",
         desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
@@ -121,7 +121,7 @@ const projects = [
 
     {
         title: "eCommerce UI Mockup",
-        coverImage: "eCommerce.png",
+        coverImage: "eCommerce.jpg",
         liveURL: "https://drgood-ecommerce-react.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/practice-ecommerce-react-app",
         desc: "Front-end React mockup of an eCommerce app for purchasing stickers.",
@@ -134,7 +134,7 @@ const projects = [
 
     {
         title: "Bottega Diner",
-        coverImage: "diner.png",
+        coverImage: "diner.jpg",
         liveURL: "https://drg-bottega-diner.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Bottega-Diner",
         desc: "Interactive diner menu with commentary.",
@@ -313,6 +313,8 @@ function closeLightbox() {
     $("#lightbox").fadeOut();
     $('body').removeClass("disable-scrolling");
     $('.unfocus-for-lightbox').removeClass("blur-content");
+    $('.project-actions').addClass('project-mobile-toggle');
+    $('.project-desc').addClass('project-mobile-toggle');
 
     setTimeout(function () {
         $('#menu-toggle').removeClass("hide-content");
@@ -333,8 +335,8 @@ $(document).ready(function () {
 
     $(document).on('click', '.project-wrapper', function () {
         $('.project-actions').addClass('project-mobile-toggle');
-        $(this).find('.project-actions').removeClass('project-mobile-toggle');
         $('.project-desc').addClass('project-mobile-toggle');
+        $(this).find('.project-actions').removeClass('project-mobile-toggle');
         $(this).find('.project-desc').removeClass('project-mobile-toggle');
     })
 

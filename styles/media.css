@@ -192,7 +192,6 @@
     .project-wrapper {
         height: 190px;
         /* padding-right: 15x; */
-        background-position: bottom;
         /* grid-template-rows: [s] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e action-s] 40px [action-e e]; */
         grid-template-rows: [s] 5px [title-s] 40px [title-e divider-s] 3px [divider-e] 1fr [desc-s] 35px [desc-e action-s] 40px [action-e e];
     }
