@@ -164,6 +164,7 @@ const projects = [
 ]
 
 const inProgressIcon = '<i class="fas fa-tools">';
+const inProgressText = 'In Progress'
 
 const liveIcon = '<i class="fas fa-desktop">';
 const liveText = "Live";
@@ -178,7 +179,7 @@ const repoText = "Code";
 const galleryRepoText = "See the Code"
 
 const infoIcon = '<i class="fas fa-question-circle">';
-const infoText = "More Info";
+const infoText = "Info";
 
 var lightboxOpen = false;
 
@@ -197,12 +198,12 @@ function buildProject(project, projectIndex) {
             "style": `background-image: url('../static/images/project/${project.coverImage}')`
         });
 
-    var projectActions = $("<div></div", { "class": "project-actions project-bg" });
+    var projectActions = $("<div></div", { "class": "project-actions project-bg project-mobile-toggle" });
     var newInfoIcon = $("<a></a>", { "class": "project-action project-active info-btn", "project-index": projectIndex }).append($(infoIcon), infoText)
     if(project.inProgress) {
         var inProgressAlert = $("<div></div>", {
             "class": "project-action project-inprogress"
-        }).append(inProgressIcon,"Under Construction");
+        }).append(inProgressIcon,inProgressText);
         projectActions.append(
             inProgressAlert,
             buildActionIcon(project.repoURL, repoIcon, repoText),
@@ -218,7 +219,7 @@ function buildProject(project, projectIndex) {
 
     var projectTitle = $("<div></div>", { "class": "project-title" }).append(project.title);
 
-    var projectDesc = $("<div></div>", { "class": "project-desc project-bg" }).append(project.desc);
+    var projectDesc = $("<div></div>", { "class": "project-desc project-bg project-mobile-toggle" }).append(project.desc);
 
     var projectSkillsWrapper = $("<div></div>", { "class": "project-skills-wrapper" });
     appendSkills(project.skills, projectSkillsWrapper)
@@ -328,6 +329,13 @@ $(document).ready(function () {
     $(document).on('click', '.info-btn', function () {
         let projectIndex = $(this).attr("project-index");
         openLightbox(projectIndex);
+    })
+
+    $(document).on('click', '.project-wrapper', function () {
+        $('.project-actions').addClass('project-mobile-toggle');
+        $(this).find('.project-actions').removeClass('project-mobile-toggle');
+        $('.project-desc').addClass('project-mobile-toggle');
+        $(this).find('.project-desc').removeClass('project-mobile-toggle');
     })
 
     $(".lightbox-click-close").click(function () {

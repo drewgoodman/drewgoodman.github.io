@@ -184,13 +184,13 @@
 
     .projects-wrapper {
         grid-template-columns: 1fr;
-        grid-gap: 20px;
+        grid-gap: 30px;
         padding-left: 10px;
         padding-right: 20px;
     }
 
     .project-wrapper {
-        height: 180px;
+        height: 190px;
         /* padding-right: 15x; */
         background-position: bottom;
         /* grid-template-rows: [s] 1fr [title-s] 40px [title-e divider-s] 3px [divider-e desc-s] 30px [desc-e action-s] 40px [action-e e]; */
@@ -202,6 +202,7 @@
     }
 
     .project-actions {
+        transition: 0.3s opacity ease-in;
         justify-content: space-around;
         font-size: 80%;
         padding-right: 0;
@@ -222,31 +223,36 @@
         font-size: 13px; */
     }
     
-    .project-skill {
+    /* .project-skill {
         height: 18px;
         width: 65px;
-    }
+    } */
 
     .project-title {
-        font-size: 1.5em;
+        font-size: 1.4em;
         transform: translateY(5px);
-        text-shadow: 2px 3px 2px #171717;
-}
+        text-shadow: 2px 2px 2px #171717;
     }
 
     .project-title, .project-desc, .project-skills-wrapper {
         padding-left: 10px;
     }
 
+    .project-mobile-toggle {
+        opacity: 0;
+        pointer-events: none;
+    }
+
     .project-desc {
+        transition: 0.3s opacity ease-in;
         padding-right: 10px;
-        font-size: 70%;
+        font-size: 75%;
         height: 36px;
     }
 
     .project-client-icon {
         right: 10px;
-        top: 60px;
+        top: 10px;
         height: 50px;
         width: 50px;
     }

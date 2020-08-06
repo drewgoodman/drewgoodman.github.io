@@ -147,14 +147,14 @@
 
 @media only screen and (max-width: 640px) {
     
-    #lightbox-skills-wrapper {
+    /* #lightbox-skills-wrapper {
         grid-template-columns: repeat(auto-fill, 65px);
         grid-gap: 3px;
         font-size: 13px;
-    }
+    } */
 
     #lightbox-text {
-        font-size: .8em;
+        font-size: .9em;
     }
 
 
