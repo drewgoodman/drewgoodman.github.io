@@ -25,7 +25,7 @@ const projects = [
         coverImage: "language-summit.jpg",
         liveURL: "https://languagesummit.com",
         repoURL: "",
-        desc: "Informative website for an online streaming conference.",
+        desc: "Marketing website for an online streaming conference hosted by Hallo in 2021.",
         skills: ["WordPress","CSS","AWS S3"],
         galleryImage: ["language-summit2.jpg"],
         galleryText: [
@@ -59,11 +59,12 @@ const projects = [
 
     {
         title: "PetStash Backend API",
-        coverImage: "petstash-back2.jpg",
+        coverImage: "petstash-back.jpg",
         liveURL: "https://petstash-backoffice.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-BackOfficeAPI",
         desc: "Restful API with CRUD functionality; handles the shop and user data.",
         skills: ["Python", "MySQL", "Flask", "Boostrap"],
+        galleryImage: ["petstash-back2.jpg"],
         galleryText: [
             "The restful API and back office data management app for Pet Stash Supply Co. as a class project. Built with Python 3, Flask, Jinja, MySQL, and Bootstrap.",
             "Additional libraries include WTForms, used for the backend UI to easily add product and category info, Passlib to encrypt user passwords, and Flask-CORS to allow cross-site requests for the storefront.",
@@ -80,6 +81,7 @@ const projects = [
         repoURL: "https://github.com/drewgoodman/Triple-Triad",
         desc: "Static HTML adaptation of a mini-game from Final Fantasy VIII.",
         skills: ["JavaScript", "HTML5", "CSS3"],
+        galleryImage: ["tripletriad-2.jpg"],
         galleryText: [
             "Recreation of a side activity from a 1998 Playstation game, Final Fantasy VIII. It was built over the course of a weekend as a static HTML page.",
             "It allows for a two-player experience where each player can choose a deck of 5 cards out of a small library. They will then be taken to a simple point-and-click interface where they may play matches of Triple Triad up until the point one is declared a winner. Rules are available in the code repository's readme file.",
@@ -91,11 +93,12 @@ const projects = [
 
     {
         title: "jQuery To-Do List",
-        coverImage: "todo-list.png",
+        coverImage: "todo-list.jpg",
         liveURL: "https://drg-jquery-todo.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/jQuery-ToDoList",
         desc: "Basic to-do list app with complete and delete functions using jQuery on a static page.",
         skills: ["jQuery", "HTML5", "CSS3"],
+        galleryImage: ["todo-list2.jpg"],
         galleryText: [
             "What it says on the tin -- it's a static HTML page that lets you track your tasks and check them off as you complete them.",
             "Simply fill out the form to add a task, then use the buttons to either complete it or trash it completely. If you complete a task by accident, you can use the undo button in its new home to send it back to the proper list. Flash notifications feature at the top when you perform certain actions.",
