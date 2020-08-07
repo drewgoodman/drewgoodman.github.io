@@ -12,6 +12,11 @@ const skills = [
         type: "Language",
     },
     {
+        title: "C++",
+        icon: "devicon-cplusplus-plain",
+        type: "Language",
+    },
+    {
         title: "HTML5",
         icon: "devicon-html5-plain",
         type: "Language",
