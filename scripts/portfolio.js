@@ -39,6 +39,21 @@ const projects = [
     },
 
     {
+        title: "Portfolio Mk.I",
+        coverImage: "portfolio-banner.jpg",
+        repoURL: "https://github.com/drewgoodman/drewgoodman.github.io",
+        desc: "Static portfolio site with jQuery functions and simulated backend for projects and skills.",
+        skills: ["jQuery","JavaScript","CSS3","HTML5"],
+        galleryText: [
+            "The very site that you're on right now!",
+            "This is the first take I built on my own portfolio website, entirely from scratch. Features custom CSS animations for the landing screen, a sticky sidebar menu layout, and a lightbox to expound on my experiences with various projects. The site is designed as a static page instead of a React project to take avantage of Github's Pages hosting system.",
+            "Personal skills and portfolio pieces are generated using jQuery scripts, with the data stored in the script as simulated JSON data from an actual backend API. Different pieces of optional data will populate the available options and inform for a given project.",
+            "Site is mobile responsive - the sticky sidebar becomes a slideout menu on a phone with an animated button in the corner to activate it. Personal skills and project cards take on different looks better suited to the scrolling nature of mobile viewing.",
+            "Despite being 'finished', this site is always a work-in-progress and is frequently updated. Check back in the future for new sections and features!"
+        ]
+    },
+
+    {
         title: "PetStash Supply Co.",
         coverImage: "petstash-front-banner.jpg",
         liveURL: "https://petstash-supply-co.herokuapp.com",
