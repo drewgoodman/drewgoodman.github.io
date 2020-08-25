@@ -23,24 +23,25 @@ const projects = [
     {
         title: "Language Summit 2021",
         coverImage: "language-summit.jpg",
-        liveURL: "https://languagesummit.com",
+        clientURL: "https://hallo.tv",
         repoURL: "",
         desc: "Marketing website for an online streaming conference hosted by Hallo in 2021.",
         skills: ["WordPress","CSS","AWS S3"],
         galleryImage: ["language-summit2.jpg"],
         galleryText: [
             "'The Language Summit aims to democratize and improve education by bringing the language learning and edtech industries together.'",
-            "The official website for Language Summit 2021 is a collaboration project with the team at Hallo to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
+            "The official website for Language Summit 2021 is a product of my internship with Hallo. It is a collaboration project designed to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
             "Before coming on board as an intern with the company, it was determined the site would be built using the startup's existing Wordpress and Elementor licenses, with custom CSS styling added as needed. I've worked closely with the team to assist with the page design, event branding, site thematic elements, and set up the hosting service and IP address at Amazon Web Service's Lightsail.",
+            "Additional services for their main website were also provided, including migration to a new host, maintenance, and minor layout tweaks as needed."
         ],
-        inProgress: true,
+        inProgress: false,
         client: true,
         clientImage: ["hallo-icon.png"],
     },
 
     {
         title: "Portfolio Mk.I",
-        coverImage: "portfolio-banner.jpg",
+        coverImage: "landing.jpg",
         repoURL: "https://github.com/drewgoodman/drewgoodman.github.io",
         desc: "Static portfolio site with jQuery functions and simulated backend for projects and skills.",
         skills: ["jQuery","JavaScript","CSS3","HTML5"],
@@ -188,6 +189,10 @@ const liveIcon = '<i class="fas fa-desktop">';
 const liveText = "Live";
 const galleryLiveText = "Try It Live";
 
+const clientLiveIcon = '<i class="fas fa-briefcase">';
+const clientLiveText = "Company Website"
+const galleryClientLiveText = "Visit Company Website"
+
 const playIcon = '<i class="fas fa-gamepad">';
 const playText = "Play";
 const galleryPlayText = "Play It Live"
@@ -236,6 +241,7 @@ function buildProject(project, projectIndex) {
     } else {
         projectActions.append(
             buildActionIcon(project.liveURL, liveIcon, liveText),
+            buildActionIcon(project.clientURL, clientLiveIcon, clientLiveText),
             buildActionIcon(project.playURL, playIcon, playText),
             buildActionIcon(project.repoURL, repoIcon, repoText),
             );
@@ -319,6 +325,7 @@ function openLightbox(projectIndex) {
     }
     $("#lightbox-actions").empty().append(
         buildActionIcon(project.liveURL, liveIcon, galleryLiveText),
+        buildActionIcon(project.clientURL, clientLiveIcon, galleryClientLiveText),
         buildActionIcon(project.playURL, playIcon, galleryPlayText),
         buildActionIcon(project.repoURL, repoIcon, galleryRepoText)
         )
