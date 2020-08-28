@@ -40,7 +40,7 @@ const projects = [
     },
 
     {
-        title: "Portfolio Mk.I",
+        title: "Personal Portfolio Mk.I",
         coverImage: "landing.jpg",
         repoURL: "https://github.com/drewgoodman/drewgoodman.github.io",
         desc: "Static portfolio site with jQuery functions and simulated backend for projects and skills.",
@@ -87,6 +87,22 @@ const projects = [
             "Building this API from scratch took up the bulk of the time alloted for the project, and presented several challenges I hadn't previously dealt with while learning how to code. I leaned on W3 schools, Stack Overflow, and even Youtube tutorials in order to construct the CRUD functionality and deploy a functioning app to Heroku.",
             "Other challenges included needing ton make a custom JSON encoder to avoid decimal dollar amounts getting converted to strings, authorizing cross-site requests from the deployed React app, and setting default values in a dropdown-box in a dynamic list to avoid user errors. MySQL Workbench and Postman were invaluable for testing the data queries and ensuring that the correct data was retrieved and posted.",
             "The MySQL database is hosted on Heroku via their ClearDB add-on, which allows for a free 5mb database. Because of this, most of the picture data used in the front-end app actually just points to images stored locally since there wasn't room to host them otherwise. "
+        ]
+    },
+    
+    {
+        title: "React.js Project Portfolio",
+        coverImage: "react-portfolio.jpg",
+        liveURL: "https://drg-bottega-react-portfolio.herokuapp.com/",
+        repoURL: "https://github.com/drewgoodman/My-First-React-Portfolio",
+        desc: "Front-end React portfolio and blog with API hooks and in-app content editors.",
+        skills: ["React.js", "SCSS",],
+        galleryImage: ["react-portfolio-2.jpg"],
+        galleryText: [
+            "A basic portfolio app built in React.js with display and blog sections -- the user can display their projects as categorized display cards featuring project thumbnails, logo icons, and descriptive text.",
+            "The app uses the Axios library to connect to an API managed by my coding school which handles user authentication and data for blog and portfolio entries.",
+            "The portfolio owner can login via the admin portal to upload new portfolio project info as well as create blog entries with a WYSIWIG editor. Image uploading is handled with Dropzone.js for a more user friendly interface.",
+            "The blog section features an infinite scrolling loading feature for older entries, loading spinner during API calls, and sticky menu icons for admin use. "
         ]
     },
 
