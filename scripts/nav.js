@@ -31,6 +31,11 @@ function closeSidebarMenu() {
 }
 
 $(document).ready(function() {
+    
+    $(window).ready(function() {
+        $('#preloader').fadeOut('slow');
+    })
+
 
     $(window).scroll(function(){
         if($(this).scrollTop() > $(window).height() && !menuActive && !lightboxOpen) {
