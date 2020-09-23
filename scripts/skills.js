@@ -91,6 +91,11 @@ const skills = [
         icon: "devicon-slack-plain",
         type: "Tool",
     },
+    {
+        title: "Trello",
+        icon: "devicon-trello-plain",
+        type: "Tool"
+    },
 
 ]
 

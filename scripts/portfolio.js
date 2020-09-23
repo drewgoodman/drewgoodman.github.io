@@ -6,16 +6,14 @@ const projects = [
         coverImage: "good-blog-banner.jpg",
         liveURL: "https://drgood-blog.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/Django-FirstBlog",
-        desc: "Blog site with CRUD functions for a PostgreSQL database and AWS S3 static hosting.",
-        skills: ["Django","AWS S3","Bootstrap","PostGreSQL"],
+        desc: "Blog site with CRUD functions, PostgreSQL database, social authentication, and AWS S3 static content hosting.",
+        skills: ["Django","AWS","Bootstrap","PostGreSQL"],
         // galleryImage: [""],
         galleryText: [
-            "The Good Blog is a responsive blog built in Django 3.0. It features user authentication, an interface for drafting and posting new blog posts, pagination, basic search and filtering systems, and and a comment thread system for users. Page styling uses Bootstrap 3.3 as a base.",
-            "This project began as a tutorial project on learning the features of Django, and was updated overtime for more advanced functionality.",
-            "Database is SQLlite in development mode, PostGreSQL on the live Heroku site. Static files, media and new image uploades are handled by a CDN at Amazon Web Services.",
+            "The Good Blog is a responsive blog built in Django 3.0. It features social user authentication via the Google API, a WYSIWYG editor for drafting new blog posts, pagination, breadcrumbing, search and filtering systems, and and a comment thread system. Page styling uses Bootstrap 3.3 as a base.",
+            "Database is SQLlite in development mode, PostGreSQL on the live Heroku site. Static files, media and new image uploades are handled by a CDN through an S3 Bucket at Amazon Web Servies.",
             "Additional front-end navigation features include dynamically updated tags, categories, and monthly archives, managed by pre-save post receivers.",
-            "The back end includes custom workflow features like a custom settings module that will automatically use different configuration settings for development and production.",
-
+            "The back end includes custom workflow features like a custom settings module that will automatically use different configuration settings for development and production, as well as the debug toolbar library for development testing.",
         ],
         inProgress: true
     },
@@ -26,7 +24,7 @@ const projects = [
         clientURL: "https://hallo.tv",
         repoURL: "",
         desc: "Marketing website for an online streaming conference hosted by Hallo in 2021.",
-        skills: ["WordPress","CSS","AWS S3"],
+        skills: ["WordPress","CSS","AWS"],
         galleryImage: ["language-summit2.jpg"],
         galleryText: [
             "'The Language Summit aims to democratize and improve education by bringing the language learning and edtech industries together.'",
@@ -48,7 +46,7 @@ const projects = [
         galleryText: [
             "The very site that you're on right now!",
             "This is the first take I built on my own portfolio website, entirely from scratch. Features custom CSS animations for the landing screen, a sticky sidebar menu layout, and a lightbox to expound on my experiences with various projects. The site is designed as a static page instead of a React project to take avantage of Github's Pages hosting system.",
-            "Personal skills and portfolio pieces are generated using jQuery scripts, with the data stored in the script as simulated JSON data from an actual backend API. Different pieces of optional data will populate the available options and inform for a given project.",
+            "Personal skills and portfolio pieces are generated using jQuery scripts, with the data stored in the script as simulated JSON data from an actual backend API. Different pieces of optional data will populate the available links and information for a given project.",
             "Site is mobile responsive - the sticky sidebar becomes a slideout menu on a phone with an animated button in the corner to activate it. Personal skills and project cards take on different looks better suited to the scrolling nature of mobile viewing.",
             "Despite being 'finished', this site is always a work-in-progress and is frequently updated. Check back in the future for new sections and features!"
         ]
@@ -59,8 +57,8 @@ const projects = [
         coverImage: "petstash-front-banner.jpg",
         liveURL: "https://petstash-supply-co.herokuapp.com",
         repoURL: "https://github.com/drewgoodman/PetStash-StoreFront",
-        desc: "Functional eCommerce site with account signup, searching, and checkout",
-        skills: ["React.js", "SCSS"],
+        desc: "Functional eCommerce mockup with account authentication, item searching, cart checkout, and order history.",
+        skills: ["React.js","SCSS","MySQL"],
         galleryImage: ["petstash-1.jpg"],
         galleryText: [
             "An eCommerce site mockup for purchasing pet supplies as a final class project. Built in React.js and styled with SCSS.",
@@ -69,7 +67,7 @@ const projects = [
             "The app is compartmentalized using the React-Router library, though some creative use of the component life cycle was required to avoid a major glitch with shifting between different routes for same component in the actual shop.",
             "Axios is used to make calls to an external API which will return user and product information as needed and post any updates to the account information or shopping history. JSON data is used to construct most of the site's content, including the product category links, the advertising banners on the front page, and the entire selection of items. A search bar allows for basic searches based on the product names, their brands, and descriptions.",
             "I considered using React-Redux to better control user state, but decided against it; most data must be frequently refreshed from the API as the user updates their shopping cart. Otherwise, most data passed as props are booleans controlling modals and basic user session data.",
-            "The first release of this app was created over the course of a week, since most of the development time needed to go into researching and building the companion API. Original design was not mobile responsive, though nav menus and media queries were added later on."
+            "The first release of the front-end app was created over the course of a week, since most of the development time needed to go into researching and building the companion API. Original design was not mobile responsive, though nav menus and media queries were added later on."
         ]
     },
 
