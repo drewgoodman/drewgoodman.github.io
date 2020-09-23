@@ -8,14 +8,14 @@ const projects = [
         repoURL: "https://github.com/drewgoodman/Django-FirstBlog",
         desc: "Blog site with CRUD functions, PostgreSQL database, social authentication, and AWS S3 static content hosting.",
         skills: ["Django","AWS","Bootstrap","PostGreSQL"],
-        // galleryImage: [""],
+        galleryImage: ["good-blog.jpg"],
         galleryText: [
-            "The Good Blog is a responsive blog built in Django 3.0. It features social user authentication via the Google API, a WYSIWYG editor for drafting new blog posts, pagination, breadcrumbing, search and filtering systems, and and a comment thread system. Page styling uses Bootstrap 3.3 as a base.",
+            "The Good Blog is a responsive blog built in Django 3.0. It features social user authentication via the Google API, a WYSIWYG editor for drafting new blog posts, pagination, breadcrumbing, search and filtering systems, automatic calculation of read-times based on a 150 WPM read speed, and and a comment thread system. Page styling uses Bootstrap 3.3 as a base.",
             "Database is SQLlite in development mode, PostGreSQL on the live Heroku site. Static files, media and new image uploades are handled by a CDN through an S3 Bucket at Amazon Web Servies.",
-            "Additional front-end navigation features include dynamically updated tags, categories, and monthly archives, managed by pre-save post receivers.",
+            "Additional front-end navigation features include a preloader graphic, scroll to top jQuery script, dynamically updated tags, categories, and monthly archives managed by pre-save post receiver signals.",
             "The back end includes custom workflow features like a custom settings module that will automatically use different configuration settings for development and production, as well as the debug toolbar library for development testing.",
         ],
-        inProgress: true
+        // inProgress: true
     },
 
     {
@@ -28,7 +28,7 @@ const projects = [
         galleryImage: ["language-summit2.jpg"],
         galleryText: [
             "'The Language Summit aims to democratize and improve education by bringing the language learning and edtech industries together.'",
-            "The official website for Language Summit 2021 is a product of my internship with Hallo. It is a collaboration project designed to provide information for an event planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
+            "The official website for Language Summit 2021 is a product of my internship with Hallo. It is a collaboration project designed to provide information for an event originally planned for late August 2020. The site currently provides information to attendees as well as potential sponsors and speakers.",
             "Before coming on board as an intern with the company, it was determined the site would be built using the startup's existing Wordpress and Elementor licenses, with custom CSS styling added as needed. I've worked closely with the team to assist with the page design, event branding, site thematic elements, and set up the hosting service and IP address at Amazon Web Service's Lightsail.",
             "Additional services for their main website were also provided, including migration to a new host, maintenance, and minor layout tweaks as needed."
         ],
