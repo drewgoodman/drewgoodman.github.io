@@ -370,6 +370,11 @@ function closeLightbox() {
 
 }
 
+function setCurrentYear() {
+    const date = new Date();
+    $('#current-year').text(date.getFullYear());
+}
+
 
 $(document).ready(function () {
 
@@ -392,4 +397,5 @@ $(document).ready(function () {
     })
 
     loadProjects();
+    setCurrentYear();
 })
