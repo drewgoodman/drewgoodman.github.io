@@ -2,6 +2,26 @@
 
 const projects = [
     {
+        title: "Hogwarts Faculty Portal",
+        coverImage: "hogwarts-portal1.jpg",
+        liveURL: "https://ecstatic-murdock-57ebaa.netlify.app",
+        repoURL: "https://github.com/drewgoodman/HogwartsPortal",
+        desc: "React app built in Material UI to manage, filter, and search student profiles and school courses. Connects to a Django backend database.",
+        skills: ["React.js","Material UI","Django","AWS","MySQL"],
+        galleryImage: ["hogwarts-portal1.jpg"],
+        galleryText: [
+            "A school management mockup app built using React.js and the Material UI component library, using characters from J.K. Rowling's Wizarding World IP for fun and flavor.",
+            "Users can view the student roster and filter data by name, assigned tags, current enrollment status, and Hogwarts house. Uses can pin student profiles to the main dashboard and toggle whether they want dark mode enabled, and these settings will be saved for reference.",
+            "Users can view all courses currently assigned to a student, see their test scores and grade average, and also view all students enrolled from the course details page. Users can also add or delete tags from student profiles, which will be offered as autosuggestions when inputing filter parameters on the main roster page.",
+            "As a contrast to my previous project PetStash, which used primarily class components and component life cycle methods, this app uses entirely functional components and takes advantage of hooks like useState and useEffect for functionality. Routes are controlled by v6 of React Router and uses an external library to control the document title on changing pages.",
+            "The project uses Redux for state management, using Thunk middleware and reducer functions to load student and course information and manage global functions like toggling theme and displaying popup messages.",
+            "The app is fully mobile responsive and styled using Material UI's API, theming system, and additional inline styles passed as props. Memoization is used for complex calculations to improve performance.",
+            "Data for the project is served from a RESTful API in Django hosted on Heroku. Database is MySQL using Heroku's ClearDB add-on. API routes in Django are configured using the Django Rest Frameework library and uses various serializers to return reponses with varying degrees of student detail.",
+            "Media uploads for student profile pics and course images are automatically uploaded to and served from an Amazon Web Services S3 bucket."
+        ]
+
+    },
+    {
         title: "The Good Blog",
         coverImage: "good-blog-banner.jpg",
         liveURL: "https://drgood-blog.herokuapp.com",
@@ -61,7 +81,7 @@ const projects = [
         skills: ["React.js","SCSS","MySQL"],
         galleryImage: ["petstash-1.jpg"],
         galleryText: [
-            "An eCommerce site mockup for purchasing pet supplies as a final class project. Built in React.js and styled with SCSS.",
+            "An eCommerce site mockup for purchasing pet supplies as a final class project. Built in React.js primarily using class components and styled with SASS.",
             "The user can create an account, sign in to that account afterwards, add items to their cart, delete them from the cart, and proceed to checkout. A record of their transaction can be found on their account page afterwards.",
             "Shipping address can added, but no payment info is utilized or current incorporated in the design.",
             "The app is compartmentalized using the React-Router library, though some creative use of the component life cycle was required to avoid a major glitch with shifting between different routes for same component in the actual shop.",
